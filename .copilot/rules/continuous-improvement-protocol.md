@@ -84,12 +84,12 @@ This outlines refining knowledge from `memory-bank/raw_reflection_log.md` into `
     ```
 
 ### 2.3. Prune `memory-bank/raw_reflection_log.md`:
-* **Crucially, once information has been successfully transferred and consolidated into `memory-bank/consolidated_learnings.md`, the corresponding original entries or processed parts **must be removed** from `memory-bank/raw_reflection_log.md`.**
+* **Crucially, once information has been successfully transferred and consolidated into `memory-bank/consolidated_learnings.md`, the corresponding original entries or processed parts **must be removed** from `memory-bank/raw_reflection_log.md.**
 * This keeps `raw_reflection_log.md` focused on recent, unprocessed reflections and prevents it from growing indefinitely with redundant information.
 
-### 2.4. Proposing `.clinerule` Enhancements (Exceptional):
+### 2.4. Proposing Protocol Enhancements (Exceptional):
 * The primary focus of this protocol is the maintenance of `raw_reflection_log.md` and `consolidated_learnings.md`.
-* If a significant, broadly applicable insight in `consolidated_learnings.md` strongly suggests modifying *another active `.clinerule`* (e.g., core workflow, tech guidance), Copilot MAY propose this change after user confirmation. This is exceptional.
+* If a significant, broadly applicable insight in `consolidated_learnings.md` strongly suggests modifying *another active Copilot rule or protocol* (e.g., core workflow, tech guidance), Copilot MAY propose this change after user confirmation. This is exceptional.
 
 ---
 
