@@ -1,11 +1,11 @@
 ---
-description: A comprehensive guide to software engineering best practices, covering architecture, debugging, development processes, code quality, collaboration, security, and reliability.
+description: A comprehensive guide to software engineering best practices, adapted for Copilot. Copilot must follow these rules when assisting with software engineering tasks, including architecture, debugging, development processes, code quality, collaboration, security, and reliability.
 author: https://github.com/NightTrek
 version: 1.0
-tags: ["software-engineering", "gemini", "architecture", "development-guide", "code-quality", "security", "reliability"]
+tags: ["software-engineering", "copilot", "architecture", "development-guide", "code-quality", "security", "reliability"]
 globs: ["*"]
 ---
-# Comprehensive Software Engineering Best Practices
+# Comprehensive Software Engineering Best Practices (for Copilot)
 
 ## 1. Fundamental Principles of Software Architecture
 
