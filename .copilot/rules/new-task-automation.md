@@ -1,36 +1,36 @@
 ---
-description: Workflow for starting new task when context window reaches 50%
+description: Workflow for starting new task when context window reaches 50%. Copilot must follow these rules for context management and task handoff.
 author: https://github.com/cline
 version: 1.0
-tags: ["context-management", "new-task"]
+tags: ["context-management", "new-task", "copilot"]
 globs: ["*"]
 ---
-# You MUST use the `new_task` tool: Task Handoff Strategy Guide
+# Copilot MUST use the `new_task` tool: Task Handoff Strategy Guide
 
-**⚠️ CRITICAL INSTRUCTIONS - YOU MUST FOLLOW THESE GUIDELINES ⚠️**
+**⚠️ CRITICAL INSTRUCTIONS - COPILOT MUST FOLLOW THESE GUIDELINES ⚠️**
 
-This guide provides **MANDATORY** instructions for effectively breaking down complex tasks and implementing a smooth handoff process between tasks. You **MUST** follow these guidelines to ensure continuity, context preservation, and efficient task completion.
+This guide provides **MANDATORY** instructions for effectively breaking down complex tasks and implementing a smooth handoff process between tasks. **Copilot MUST** follow these guidelines to ensure continuity, context preservation, and efficient task completion.
 
 ## ⚠️ CONTEXT WINDOW MONITORING - MANDATORY ACTION REQUIRED ⚠️
 
-You **MUST** monitor the context window usage displayed in the environment details. When usage exceeds 50% of the available context window, you **MUST** initiate a task handoff using the `new_task` tool.
+**Copilot MUST** monitor the context window usage displayed in the environment details. When usage exceeds 50% of the available context window, **Copilot MUST** initiate a task handoff using the `new_task` tool.
 
 Example of context window usage over 50% with a 200K context window:
 
-\`\`\`text
+```text
 # Context Window Usage
 105,000 / 200,000 tokens (53%)
 Model: anthropic/claude-3.7-sonnet (200K context window)
-\`\`\`
+```
 
-**IMPORTANT**: When you see context window usage at or above 50%, you MUST:
-1. Complete your current logical step
+**IMPORTANT**: When you see context window usage at or above 50%, Copilot MUST:
+1. Complete the current logical step
 2. Use the `ask_followup_question` tool to offer creating a new task
 3. If approved, use the `new_task` tool with comprehensive handoff instructions
 
 ## Task Breakdown in Plan Mode - REQUIRED PROCESS
 
-Plan Mode is specifically designed for analyzing complex tasks and breaking them into manageable subtasks. When in Plan Mode, you **MUST**:
+Plan Mode is specifically designed for analyzing complex tasks and breaking them into manageable subtasks. When in Plan Mode, **Copilot MUST**:
 
 ### 1. Initial Task Analysis - REQUIRED
 
@@ -52,7 +52,7 @@ Plan Mode is specifically designed for analyzing complex tasks and breaking them
 - **MUST** provide time estimates for each subtask when possible
 - **MUST** use Mermaid diagrams to visualize task flow and dependencies when helpful
 
-\`\`\`mermaid
+```mermaid
 graph TD
     A[Main Task] --> B[Subtask 1: Setup]
     A --> C[Subtask 2: Core Implementation]
@@ -60,7 +60,7 @@ graph TD
     A --> E[Subtask 4: Documentation]
     B --> C
     C --> D
-\`\`\`
+```
 
 ### 4. Getting User Approval - REQUIRED
 
@@ -71,7 +71,7 @@ graph TD
 
 ## Task Implementation and Handoff Process - MANDATORY PROCEDURES
 
-When implementing tasks in Act Mode, you **MUST** follow these guidelines for effective task handoff:
+When implementing tasks in Act Mode, **Copilot MUST** follow these guidelines for effective task handoff:
 
 ### 1. Focused Implementation - REQUIRED
 
@@ -81,7 +81,7 @@ When implementing tasks in Act Mode, you **MUST** follow these guidelines for ef
 
 ### 2. Recognizing Completion Points - CRITICAL
 
-You **MUST** identify natural handoff points when:
+**Copilot MUST** identify natural handoff points when:
 - The current subtask is fully completed
 - You've reached a logical stopping point in a larger subtask
 - The implementation is taking longer than expected and can be continued later
@@ -90,24 +90,24 @@ You **MUST** identify natural handoff points when:
 
 ### 3. Initiating the Handoff Process - MANDATORY ACTION
 
-When you've reached a completion point, you **MUST**:
+When you've reached a completion point, **Copilot MUST**:
 
 1. Summarize what has been accomplished so far
 2. Clearly state what remains to be done
 3. **MANDATORY**: Use the `ask_followup_question` tool to offer creating a new task:
 
-\`\`\`xml
+```xml
 <ask_followup_question>
 <question>I've completed [specific accomplishment]. Would you like me to create a new task to continue with [remaining work]?</question>
 <options>["Yes, create a new task", "No, continue in this session", "Let me think about it"]</options>
 </ask_followup_question>
-\`\`\`
+```
 
 ### 4. Creating a New Task with Context - REQUIRED ACTION
 
-If the user agrees to create a new task, you **MUST** use the `new_task` tool with comprehensive handoff instructions:
+If the user agrees to create a new task, **Copilot MUST** use the `new_task` tool with comprehensive handoff instructions:
 
-\`\`\`xml
+```xml
 <new_task>
 <context>
 # Task Continuation: [Brief Task Title]
@@ -135,11 +135,11 @@ If the user agrees to create a new task, you **MUST** use the `new_task` tool wi
 Please continue the implementation by [specific next action].
 </context>
 </new_task>
-\`\`\`
+```
 
 ### 5. Detailed Context Transfer - MANDATORY COMPONENTS
 
-When creating a new task, you **MUST** always include:
+When creating a new task, **Copilot MUST** always include:
 
 #### Project Context - REQUIRED
 - **MUST** include the overall goal and purpose of the project
@@ -198,7 +198,7 @@ When creating a new task, you **MUST** always include:
 
 ### Example #1 of an effective task handoff:
 
-\`\`\`xml
+```xml
 <new_task>
 <context>
 # Task Continuation: Implement User Authentication System
@@ -237,7 +237,7 @@ When creating a new task, you **MUST** always include:
 Please continue by implementing the login endpoint following the same patterns established in the registration endpoint.
 </context>
 </new_task>
-\`\`\`
+```
 
 ### Example #2 of an ineffective task handoff:
 
@@ -245,7 +245,7 @@ Please continue by implementing the login endpoint following the same patterns e
 
 ## When to Use Task Handoffs - MANDATORY TRIGGERS
 
-You **MUST** initiate task handoffs in these scenarios:
+**Copilot MUST** initiate task handoffs in these scenarios:
 
 1. **CRITICAL**: When context window usage exceeds 50% (e.g., 100,000+ tokens for a 200K context window)
 2. **Long-running projects** that exceed a single session
@@ -256,13 +256,12 @@ You **MUST** initiate task handoffs in these scenarios:
 
 **⚠️ FINAL REMINDER - CRITICAL INSTRUCTION ⚠️**
 
-You **MUST** monitor the context window usage in the environment details section. When it exceeds 50% (e.g., "105,000 / 200,000 tokens (53%)"), you **MUST** proactively initiate the task handoff process using the `ask_followup_question` tool followed by the `new_task` tool. You MUST use the `new_task` tool.
+**Copilot MUST** monitor the context window usage in the environment details section. When it exceeds 50% (e.g., "105,000 / 200,000 tokens (53%)"), **Copilot MUST** proactively initiate the task handoff process using the `ask_followup_question` tool followed by the `new_task` tool. **Copilot MUST** use the `new_task` tool.
 
-By strictly following these guidelines, you'll ensure smooth transitions between tasks, maintain project momentum, and provide the best possible experience for users working on complex, multi-session projects.
-```markdown
+By strictly following these guidelines, Copilot will ensure smooth transitions between tasks, maintain project momentum, and provide the best possible experience for users working on complex, multi-session projects.
 
 ## User Interaction & Workflow Considerations
 
 *   **Linear Flow:** Currently, using `new_task` creates a linear sequence. The old task ends, and the new one begins. The old task history remains accessible for backtracking.
-*   **User Approval:** You always have control, approving the handoff and having the chance to modify the context Cline proposes to carry forward.
+*   **User Approval:** The user always has control, approving the handoff and having the chance to modify the context Copilot proposes to carry forward.
 *   **Flexibility:** The core `new_task` tool is a flexible building block. Experiment with `.clinerules` to create workflows that best suit your needs, whether for strict context management, task decomposition, or other creative uses.
