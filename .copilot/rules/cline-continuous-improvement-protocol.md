@@ -1,13 +1,13 @@
 ---
-description: Defines Cline's mandatory protocol for self-reflection, persistent knowledge capture using dedicated logs, and continuous improvement of its operational knowledge before task completion.
+description: Defines Copilot's mandatory protocol for self-reflection, persistent knowledge capture using dedicated logs, and continuous improvement of its operational knowledge before task completion. Copilot must follow these rules for self-improvement and knowledge refinement.
 author: https://github.com/jeanibarz
 version: 1.0
-tags: ["protocol", "meta", "learning", "reflection", "knowledge-management", "core-behavior"]
-globs: ["*"] # This core protocol is always active and applies to all Cline operations.
+tags: ["protocol", "meta", "learning", "reflection", "knowledge-management", "core-behavior", "copilot"]
+globs: ["*"] # This core protocol is always active and applies to all Copilot operations.
 ---
-# Cline Continuous Improvement Protocol
+# Copilot Continuous Improvement Protocol
 
-**Objective:** Ensure Cline proactively learns from tasks, captures knowledge in a structured way, **distills fundamental insights,** refines understanding, and improves efficiency and reliability. This protocol maintains two key files: `memory-bank/raw_reflection_log.md` for initial detailed logging, and `memory-bank/consolidated_learnings.md` for pruned, actionable, long-term knowledge. This is vital for optimal performance and avoiding redundant effort.
+**Objective:** Ensure Copilot proactively learns from tasks, captures knowledge in a structured way, **distills fundamental insights,** refines understanding, and improves efficiency and reliability. This protocol maintains two key files: `memory-bank/raw_reflection_log.md` for initial detailed logging, and `memory-bank/consolidated_learnings.md` for pruned, actionable, long-term knowledge. This is vital for optimal performance and avoiding redundant effort.
 
 **Core Principle:** Continuous learning and adaptation are **mandatory**. This protocol **must be executed before `attempt_completion`** for tasks with new learning, problem-solving, user feedback, or multiple steps. Trivial mechanical tasks *may* be exempt per higher-level rules; otherwise, execution is default.
 
@@ -19,7 +19,7 @@ globs: ["*"] # This core protocol is always active and applies to all Cline oper
 
 ## 1. Mandatory Pre-Completion Reflection & Raw Knowledge Capture
 
-Before signaling task completion (e.g., via `attempt_completion`), Cline **must** perform the following internal steps:
+Before signaling task completion (e.g., via `attempt_completion`), Copilot **must** perform the following internal steps:
 
 ### 1.1. Task Review & Analysis:
 * Review the completed task (conversation, logs, artifacts).
@@ -28,7 +28,7 @@ Before signaling task completion (e.g., via `attempt_completion`), Cline **must*
 * **Identify Successes:** What went particularly well? What strategies or tools were notably effective? **What were the key contributing factors?**
 
 ### 1.2. Logging to `memory-bank/raw_reflection_log.md`:
-* Based on Task Review & Analysis (1.1), create a timestamped, task-referenced entry in `memory-bank/raw_reflection_log.md` detailing all learnings, difficulties (and their resolutions/learnings), and successes (and contributing factors).
+* Based on Task Review & Analysis (1.1), Copilot must create a timestamped, task-referenced entry in `memory-bank/raw_reflection_log.md` detailing all learnings, difficulties (and their resolutions/learnings), and successes (and contributing factors).
 * This file serves as the initial, detailed record. Its entries are candidates for later consolidation.
 * *Example Entry in `memory-bank/raw_reflection_log.md`:*
     ```markdown
@@ -61,7 +61,7 @@ Before signaling task completion (e.g., via `attempt_completion`), Cline **must*
 This outlines refining knowledge from `memory-bank/raw_reflection_log.md` into `memory-bank/consolidated_learnings.md`. This occurs periodically or when `raw_reflection_log.md` grows significantly, not necessarily after each task.
 
 ### 2.1. Review and Identify for Consolidation:
-* Periodically, or when prompted by the user or significant new raw entries, review `memory-bank/raw_reflection_log.md`.
+* Periodically, or when prompted by the user or significant new raw entries, Copilot must review `memory-bank/raw_reflection_log.md`.
 * Identify entries/parts representing durable, actionable, or broadly applicable knowledge (e.g., reusable patterns, critical configurations, effective strategies, resolved errors).
 
 ### 2.2. Synthesize and Transfer to `memory-bank/consolidated_learnings.md`:
@@ -89,7 +89,7 @@ This outlines refining knowledge from `memory-bank/raw_reflection_log.md` into `
 
 ### 2.4. Proposing `.clinerule` Enhancements (Exceptional):
 * The primary focus of this protocol is the maintenance of `raw_reflection_log.md` and `consolidated_learnings.md`.
-* If a significant, broadly applicable insight in `consolidated_learnings.md` strongly suggests modifying *another active `.clinerule`* (e.g., core workflow, tech guidance), Cline MAY propose this change after user confirmation. This is exceptional.
+* If a significant, broadly applicable insight in `consolidated_learnings.md` strongly suggests modifying *another active `.clinerule`* (e.g., core workflow, tech guidance), Copilot MAY propose this change after user confirmation. This is exceptional.
 
 ---
 
@@ -103,5 +103,5 @@ These guidelines apply to entries in `memory-bank/raw_reflection_log.md` (initia
 * **Document Persistently, Refine & Prune Continuously:** Capture raw insights immediately. Systematically refine, consolidate, and prune this knowledge as per Section 2.
 * **Organize for Retrieval:** Structure `consolidated_learnings.md` logically. Use clear headings and Markdown formatting.
 * **Avoid Low-Utility Information in `consolidated_learnings.md`:** This file should not contain trivial statements. Raw, verbose thoughts belong in `raw_reflection_log.md` before pruning.
-* **Support Continuous Improvement:** The ultimate goal is to avoid repeating mistakes, accelerate future tasks, and make Cline's operations more robust and reliable. Frame all knowledge with this in mind.
+* **Support Continuous Improvement:** The ultimate goal is to avoid repeating mistakes, accelerate future tasks, and make Copilot's operations more robust and reliable. Frame all knowledge with this in mind.
 * **Manage Information Density:** Actively work to keep `consolidated_learnings.md` dense with high-value information and free of outdated or overly verbose content. The pruning of `raw_reflection_log.md` is key to this.
