@@ -10,11 +10,11 @@ globs: ["*"] # Relevant for any task requiring complex thought processes
 
 ## 1. Objective
 
-This rule guides Cline (the AI) in effectively utilizing the `sequentialthinking` MCP tool. This tool is designed for dynamic and reflective problem-solving, allowing for a flexible thinking process that can adapt, evolve, and build upon previous insights.
+This rule guides Copilot (the AI) in effectively utilizing the `sequentialthinking` MCP tool. This tool is designed for dynamic and reflective problem-solving, allowing for a flexible thinking process that can adapt, evolve, and build upon previous insights.
 
 ## 2. When to Use the `sequentialthinking` Tool
 
-Cline SHOULD consider using the `sequentialthinking` tool when faced with tasks that involve:
+Copilot SHOULD consider using the `sequentialthinking` tool when faced with tasks that involve:
 
 *   **Complex Problem Decomposition:** Breaking down large, multifaceted problems into smaller, manageable steps.
 *   **Planning and Design (Iterative):** Architecting solutions where the plan might need revision as understanding deepens.
@@ -27,7 +27,7 @@ Cline SHOULD consider using the `sequentialthinking` tool when faced with tasks 
 
 ## 3. Core Principles for Using `sequentialthinking`
 
-When invoking the `sequentialthinking` tool, Cline MUST adhere to the following principles:
+When invoking the `sequentialthinking` tool, Copilot MUST adhere to the following principles:
 
 *   **Iterative Thought Process:** Each use of the tool represents a single "thought." Build upon, question, or revise previous thoughts in subsequent calls.
 *   **Dynamic Thought Count:**
@@ -48,7 +48,7 @@ When invoking the `sequentialthinking` tool, Cline MUST adhere to the following 
 
 ## 4. Parameters of the `sequentialthinking` Tool
 
-Cline MUST correctly use the following parameters when calling the `use_mcp_tool` for `sequentialthinking`:
+Copilot MUST correctly use the following parameters when calling the `use_mcp_tool` for `sequentialthinking`:
 
 *   **`thought` (string, required):** The current thinking step. This can be an analytical step, a question, a revision, a hypothesis, etc.
 *   **`nextThoughtNeeded` (boolean, required):**
@@ -60,22 +60,22 @@ Cline MUST correctly use the following parameters when calling the `use_mcp_tool
 *   **`revisesThought` (integer, optional, min: 1):** If `isRevision` is true, this specifies the `thoughtNumber` of the thought being revised.
 *   **`branchFromThought` (integer, optional, min: 1):** If this thought represents a branching point from a previous line of thought, specify the `thoughtNumber` it branches from.
 *   **`branchId` (string, optional):** An identifier for the current branch of thought, if applicable.
-*   **`needsMoreThoughts` (boolean, optional):** Use this if `thoughtNumber` has reached `totalThoughts`, but Cline realizes more thinking is necessary. This signals the need to continue and potentially adjust `totalThoughts`.
+*   **`needsMoreThoughts` (boolean, optional):** Use this if `thoughtNumber` has reached `totalThoughts`, but Copilot realizes more thinking is necessary. This signals the need to continue and potentially adjust `totalThoughts`.
 
 ## 5. Workflow Example (Conceptual)
 
-This illustrates how Cline might use the tool iteratively.
+This illustrates how Copilot might use the tool iteratively.
 
 **User Task:** "Plan the architecture for a new e-commerce feature: 'Personalized Recommendations'."
 
-**Cline's Internal Process using `sequentialthinking`:**
+**Copilot's Internal Process using `sequentialthinking`:**
 
 1.  **Thought 1:**
     *   `thought`: "Initial approach: Identify key components for personalized recommendations. These likely include a data collection module, a recommendation engine, and a display module."
     *   `nextThoughtNeeded`: true
     *   `thoughtNumber`: 1
     *   `totalThoughts`: 5 (initial estimate)
-2.  **Thought 2 (User provides feedback or Cline realizes something):**
+2.  **Thought 2 (User provides feedback or Copilot realizes something):**
     *   `thought`: "Refining components: Data collection needs to capture user behavior (views, purchases, ratings). The engine might use collaborative filtering. Display module needs to integrate into product pages and a dedicated 'Recommended for You' section."
     *   `nextThoughtNeeded`: true
     *   `thoughtNumber`: 2
@@ -107,7 +107,7 @@ This illustrates how Cline might use the tool iteratively.
     *   `thoughtNumber`: 7
     *   `totalThoughts`: 7
 
-## 6. Critical Reminders for Cline
+## 6. Critical Reminders for Copilot
 
 *   **DO NOT** use this tool for simple, single-step tasks. It is for complex reasoning.
 *   **ALWAYS** ensure `thoughtNumber` increments correctly.
@@ -115,4 +115,4 @@ This illustrates how Cline might use the tool iteratively.
 *   **FOCUS** on making progress towards a solution with each thought.
 *   If a line of thinking becomes a dead end, **EXPLICITLY** state this in a `thought` and consider revising a previous thought or starting a new branch.
 
-This guide should help Cline leverage the `sequentialthinking` MCP tool to its full potential.
+This guide should help Copilot leverage the `sequentialthinking` MCP tool to its full potential.
