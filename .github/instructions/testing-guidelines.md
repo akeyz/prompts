@@ -1,3 +1,10 @@
+---
+description: Testing guidelines and best practices for AI assistant-generated code.
+tags: testing, guidelines, ai-guidelines
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
+---
+
 # AI Assistant Testing Guidelines & Best Practices
 
 ## 1. Principles & Objectives
@@ -16,12 +23,16 @@
 
 ## 3. Test Case Template (Recommended Format)
 
-1. **Test Case Name**: [Name]
-2. **Description**: [What is being tested]
-3. **Input**: [Input data]
-4. **Expected Output**: [Expected result]
-5. **Scenario Type**: [Positive/Negative/Edge]
-6. **Setup/Teardown**: [Setup/Teardown steps, if any]
+> **All test cases MUST be written as structured lists. Tables are strictly prohibited.**
+>
+> Example：
+>
+> 1. **Test Case Name**: [Name]
+> 2. **Description**: [What is being tested]
+> 3. **Input**: [Input data]
+> 4. **Expected Output**: [Expected result]
+> 5. **Scenario Type**: [Positive/Negative/Edge]
+> 6. **Setup/Teardown**: [Setup/Teardown steps, if any]
 
 ## 4. JUnit Assertion Best Practices
 

@@ -1,3 +1,10 @@
+---
+description: Standard programming workflow for AI agents, enforcing step-by-step design, testing, and implementation.
+tags: programming-workflow, ai-guidelines, process
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
+---
+
 # Programming Workflow for AI Agents
 
 This document defines the standard programming workflow for AI agents.  

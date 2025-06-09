@@ -1,3 +1,10 @@
+---
+description: Clean code and quality standards for AI agent-generated code.
+tags: [clean-code, standards, ai-guidelines]
+applyTo: ["*"]
+compatibility: [Copilot, Cline, Roo Code, Any AI agent]
+---
+
 # AI Assistant Code Standards & Quality
 
 ## Clean Code & Code Quality

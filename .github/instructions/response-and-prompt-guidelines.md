@@ -1,3 +1,10 @@
+---
+description: Structure and language guidelines for AI assistant responses.
+tags: response-guidelines, prompt, ai-guidelines
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
+---
+
 # Response Structure Guidelines
 
 This document defines the structure for all AI assistant responses. Use as a system instruction for Copilot, Cline, Roo Code, or any AI assistant.

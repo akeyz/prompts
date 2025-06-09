@@ -1,9 +1,8 @@
 ---
-applyTo: "**"
 description: Describes the Memory Bank system, its structure, and workflows for maintaining project knowledge across sessions. Copilot, Cline, Roo Code, or any AI assistant must follow these rules for context restoration and documentation.
-author: https://github.com/nickbaumann98
-version: 1.0
-tags: [ "memory-bank", "knowledge-base", "core-behavior", "documentation-protocol"]
+tags: memory-bank, knowledge-base, core-behavior, documentation-protocol
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
 ---
 
 # AI assistant's Memory Bank

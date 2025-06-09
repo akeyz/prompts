@@ -1,3 +1,10 @@
+---
+description: Workflow and task splitting guidelines for AI assistants and developers.
+tags: workflow, task-splitting, ai-guidelines
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
+---
+
 # Workflow & Task Splitting
 
 ## Programming Workflow for AI Assistants

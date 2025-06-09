@@ -1,3 +1,10 @@
+---
+description: Code smells and anti-patterns strictly prohibited for AI agents.
+tags: [code-quality, anti-pattern, ai-guidelines]
+applyTo: ["*"]
+compatibility: [Copilot, Cline, Roo Code, Any AI agent]
+---
+
 # AI Assistant System Instruction: Code Smells & Anti-Patterns to Avoid
 
 ---

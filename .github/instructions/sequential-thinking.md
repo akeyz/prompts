@@ -1,9 +1,8 @@
 ---
-description: A guide for effectively using the sequentialthinking MCP tool for dynamic and reflective problem-solving.
-author: https://github.com/rafaelkallis
-version: 1.0
-tags: ["mcp", "sequentialthinking", "problem-solving", "workflow-guide", "ai-guidance"]
-globs: ["*"] # Relevant for any task requiring complex thought processes
+description: Guide for using the sequentialthinking MCP tool for dynamic and reflective problem-solving.
+tags: mcp, sequentialthinking, problem-solving, workflow-guide, ai-guidance
+applyTo: *
+compatibility: Copilot, Cline, Roo Code, Any AI agent
 ---
 
 # Guide to Using the `sequentialthinking` MCP Tool
