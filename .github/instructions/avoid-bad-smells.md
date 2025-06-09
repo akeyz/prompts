@@ -1,11 +1,11 @@
-# Copilot System Instruction: Code Smells & Anti-Patterns to Avoid
+# AI Assistant System Instruction: Code Smells & Anti-Patterns to Avoid
 
 ---
 
 ## Purpose
 
-This document is a mandatory system instruction for Copilot.  
-**Copilot must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**  
+This document is a mandatory system instruction for Copilot, Cline, Roo Code, or any AI assistant.  
+**Copilot, Cline, Roo Code, or any AI assistant must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**  
 Always enforce these rules to maintain the highest code quality.
 
 ---
@@ -78,5 +78,5 @@ Always enforce these rules to maintain the highest code quality.
 
 ---
 
-> Copilot must apply this list during all code generation, review, and refactoring.  
+> Copilot, Cline, Roo Code, or any AI assistant must apply this list during all code generation, review, and refactoring.  
 > Violations are not permitted under any circumstances.

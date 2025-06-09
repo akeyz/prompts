@@ -1,4 +1,4 @@
-# Code Standards & Quality
+# AI Assistant Code Standards & Quality
 
 ## Clean Code & Code Quality
 

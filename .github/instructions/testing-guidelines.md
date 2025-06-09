@@ -1,4 +1,4 @@
-# Testing Guidelines & Best Practices
+# AI Assistant Testing Guidelines & Best Practices
 
 ## Test Design Guidelines
 

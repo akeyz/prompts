@@ -2,7 +2,7 @@
 
 ## Programming Workflow for AI Assistants
 
-This workflow applies to AI assistants and developers handling any software programming task.
+This workflow applies to Copilot, Cline, Roo Code, or any AI assistant (and developers) handling any software programming task.
 
 1. Understand the technical requirements, including the concepts involved and their relationships.
 2. Split the requirement into mutually exclusive and collectively exhaustive components.
