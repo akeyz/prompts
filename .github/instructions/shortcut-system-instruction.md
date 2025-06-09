@@ -63,11 +63,11 @@ This document defines how AI assistants handle shortcut commands - short prefixe
 - **shorts!**
   - Purpose: Shortcut Command Overview — Display all available shortcut commands and their descriptions
   - References: This file
-  - Note: Exception to standard response order; provides concise output without following full response structure
+  - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
 - **rules!**
   - Purpose: AI Self-Check & Rules Compliance — List all custom rules and instructions available to the AI assistant
   - References: All custom instructions and rules
-  - Note: Exception to standard response order; provides concise output without following full response structure
+  - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
 
 ## Usage Examples
 
