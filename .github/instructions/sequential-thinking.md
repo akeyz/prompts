@@ -1,19 +1,21 @@
 ---
-description: Guide for using the sequentialthinking MCP tool for dynamic and reflective problem-solving.
+description: Guide for using the sequentialthinking MCP tool for dynamic and reflective problem-solving by The AI Assistant.
 tags: mcp, sequentialthinking, problem-solving, workflow-guide, ai-guidance
-applyTo: *
+applyTo: ["*"]
 compatibility: Copilot, Cline, Roo Code, Any AI agent
 ---
 
 # Guide to Using the `sequentialthinking` MCP Tool
 
+*This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in using the `sequentialthinking` MCP tool.*
+
 ## 1. Objective
 
-This rule guides Copilot, Cline, Roo Code, or any AI assistant in effectively utilizing the `sequentialthinking` MCP tool. This tool is designed for dynamic and reflective problem-solving, allowing for a flexible thinking process that can adapt, evolve, and build upon previous insights.
+This rule guides The AI Assistant in effectively utilizing the `sequentialthinking` MCP tool. This tool is designed for dynamic and reflective problem-solving, allowing for a flexible thinking process that can adapt, evolve, and build upon previous insights.
 
 ## 2. When to Use the `sequentialthinking` Tool
 
-Copilot, Cline, Roo Code, or any AI assistant SHOULD consider using the `sequentialthinking` tool when faced with tasks that involve:
+The AI Assistant SHOULD consider using the `sequentialthinking` tool when faced with tasks that involve:
 
 *   **Complex Problem Decomposition:** Breaking down large, multifaceted problems into smaller, manageable steps.
 *   **Planning and Design (Iterative):** Architecting solutions where the plan might need revision as understanding deepens.
@@ -26,7 +28,7 @@ Copilot, Cline, Roo Code, or any AI assistant SHOULD consider using the `sequent
 
 ## 3. Core Principles for Using `sequentialthinking`
 
-When invoking the `sequentialthinking` tool, Copilot, Cline, Roo Code, or any AI assistant MUST adhere to the following principles:
+When invoking the `sequentialthinking` tool, The AI Assistant MUST adhere to the following principles:
 
 *   **Iterative Thought Process:** Each use of the tool represents a single "thought." Build upon, question, or revise previous thoughts in subsequent calls.
 *   **Dynamic Thought Count:**
@@ -47,7 +49,7 @@ When invoking the `sequentialthinking` tool, Copilot, Cline, Roo Code, or any AI
 
 ## 4. Parameters of the `sequentialthinking` Tool
 
-Copilot, Cline, Roo Code, or any AI assistant MUST correctly use the following parameters when calling the `use_mcp_tool` for `sequentialthinking`:
+The AI Assistant MUST correctly use the following parameters when calling the `use_mcp_tool` for `sequentialthinking`:
 
 *   **`thought` (string, required):** The current thinking step. This can be an analytical step, a question, a revision, a hypothesis, etc.
 *   **`nextThoughtNeeded` (boolean, required):**
@@ -63,7 +65,7 @@ Copilot, Cline, Roo Code, or any AI assistant MUST correctly use the following p
 
 ## 5. Workflow Example (Conceptual)
 
-This illustrates how Copilot, Cline, Roo Code, or any AI assistant might use the tool iteratively.
+This illustrates how The AI Assistant might use the tool iteratively.
 
 **User Task:** "Plan the architecture for a new e-commerce feature: 'Personalized Recommendations'."
 
@@ -114,4 +116,4 @@ This illustrates how Copilot, Cline, Roo Code, or any AI assistant might use the
 *   **FOCUS** on making progress towards a solution with each thought.
 *   If a line of thinking becomes a dead end, **EXPLICITLY** state this in a `thought` and consider revising a previous thought or starting a new branch.
 
-This guide should help Copilot, Cline, Roo Code, or any AI assistant leverage the `sequentialthinking` MCP tool to its full potential.
+This guide should help The AI Assistant leverage the `sequentialthinking` MCP tool to its full potential.

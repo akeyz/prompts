@@ -11,17 +11,17 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 
 ## Purpose
 
-This document is a mandatory system instruction for Copilot, Cline, Roo Code, or any AI assistant.  
-**Copilot, Cline, Roo Code, or any AI assistant must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**  
+This document is a mandatory system instruction for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).
+**The AI Assistant must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**
 Always enforce these rules to maintain the highest code quality.
 
 ---
 
 ## 1. Code Smells — Strictly Prohibited
 
-- Do not duplicate code or logic.
-- Never write long methods; keep functions short and focused.
-- Avoid large classes; ensure each class has a single responsibility.
+- Do not duplicate code or logic (see DRY principle in [code-standards.md](./code-standards.md)).
+- Keep functions/methods short and focused (see [code-standards.md](./code-standards.md)).
+- Ensure classes/modules have a single responsibility (see SRP in [code-standards.md](./code-standards.md)).
 - Limit parameter lists; encapsulate related data.
 - Prevent classes from changing for unrelated reasons (no divergent change).
 - Avoid shotgun surgery; changes should be localized.
@@ -42,8 +42,8 @@ Always enforce these rules to maintain the highest code quality.
 - Do not use excessive comments to hide poor code.
 - Never use global variables.
 - Remove all dead code.
-- Do not use magic numbers or strings; use named constants.
-- Maintain consistent naming and formatting.
+- Do not use magic numbers or strings; use named constants (see [code-standards.md](./code-standards.md)).
+- Maintain consistent naming and formatting (see [code-standards.md](./code-standards.md)).
 - Handle exceptions clearly and robustly.
 - Avoid hidden temporal coupling; make dependencies explicit.
 - Do not use boolean or output arguments.
@@ -85,5 +85,5 @@ Always enforce these rules to maintain the highest code quality.
 
 ---
 
-> Copilot, Cline, Roo Code, or any AI assistant must apply this list during all code generation, review, and refactoring.  
+> The AI Assistant must apply this list during all code generation, review, and refactoring.
 > Violations are not permitted under any circumstances.

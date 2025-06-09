@@ -1,14 +1,16 @@
 ---
-description: Defines how AI assistants recognize and execute user-defined shortcut commands (e.g., r!, d!, t!), ensuring consistent, predictable, and structured shortcut handling.
+description: Defines how The AI Assistant recognizes and executes user-defined shortcut commands (e.g., r!, d!, t!), ensuring consistent, predictable, and structured shortcut handling.
 tags: [ "shortcut", "ai-assistant", "command", "system-instruction" ]
-globs: ["*"]
+applyTo: ["*"]
 ---
 
-# Shortcut Instruction for AI Assistants
+# Shortcut Instruction for The AI Assistant
+
+*This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in handling shortcut commands.*
 
 ## Purpose & Format
 
-This document defines how AI assistants handle shortcut commands - short prefixes ending with `!` (e.g., `d!`, `t!`). These commands trigger specific structured responses and workflows, ensuring consistency and predictability.
+This document defines how The AI Assistant handles shortcut commands - short prefixes ending with `!` (e.g., `d!`, `t!`). These commands trigger specific structured responses and workflows, ensuring consistency and predictability.
 
 ## Command Execution Process
 
@@ -65,7 +67,7 @@ This document defines how AI assistants handle shortcut commands - short prefixe
   - References: This file
   - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
 - **rules!**
-  - Purpose: AI Self-Check & Rules Compliance — List all custom rules and instructions available to the AI assistant
+  - Purpose: AI Self-Check & Rules Compliance — List all custom rules and instructions available to The AI Assistant
   - References: All custom instructions and rules
   - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
 
@@ -74,5 +76,5 @@ This document defines how AI assistants handle shortcut commands - short prefixe
 - `plan!` initiates detailed planning: `plan! Implement user authentication`
 - `d!` starts architecture design: `d! Design a database schema for users`
 
-> This rule applies to all AI assistants.  
+> This rule applies to The AI Assistant.
 > Ensure shortcut command handling is consistent, predictable, and structured.
