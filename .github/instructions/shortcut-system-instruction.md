@@ -1,7 +1,5 @@
 ---
 description: Defines how AI assistants recognize and execute user-defined shortcut commands (e.g., r!, d!, t!), ensuring consistent, predictable, and structured shortcut handling.
-author: https://github.com/nickbaumann98
-version: 1.1
 tags: [ "shortcut", "ai-assistant", "command", "system-instruction" ]
 globs: ["*"]
 ---
@@ -10,16 +8,22 @@ globs: ["*"]
 
 ## Purpose & Format
 
-This document defines how AI assistants handle shortcut commands - short prefixes ending with `!` (e.g., `r!`, `d!`, `t!`). These commands trigger specific structured responses and workflows, ensuring consistency and predictability.
+This document defines how AI assistants handle shortcut commands - short prefixes ending with `!` (e.g., `d!`, `t!`). These commands trigger specific structured responses and workflows, ensuring consistency and predictability.
 
 ## Command Execution Process
 
-1. Parse input to extract the shortcut identifier (e.g., `r!`)
+1. Parse input to extract the shortcut identifier (e.g., `d!`)
 2. Match the identifier to a command in this file
 3. Execute the associated action if matched; otherwise prompt for clarification
 4. User-defined shortcuts take precedence in case of conflicts
 
 ## Available Commands
+
+### Planning
+
+- **plan!**
+  - Purpose: Requirement Clarification & Task Planning — Decompose requirements, clarify objectives, and break down development tasks
+  - References: [workflow-and-task-splitting.md], [response-and-prompt-guidelines.md], [programming-workflow.md]
 
 ### Design Layer
 
@@ -63,15 +67,8 @@ This document defines how AI assistants handle shortcut commands - short prefixe
   - Purpose: AI Self-Check & Rules Compliance — List all custom rules and instructions available to the AI assistant
   - References: All custom instructions and rules
 
-### Planning
-
-- **plan!**
-  - Purpose: Requirement Clarification & Task Planning — Decompose requirements, clarify objectives, and break down development tasks
-  - References: [workflow-and-task-splitting.md], [response-and-prompt-guidelines.md], [programming-workflow.md]
-
 ## Usage Examples
 
-- `r!` triggers structured requirement decomposition: `r! Create a login system`
 - `plan!` initiates detailed planning: `plan! Implement user authentication`
 - `d!` starts architecture design: `d! Design a database schema for users`
 
