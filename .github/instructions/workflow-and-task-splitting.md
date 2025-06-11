@@ -9,6 +9,8 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 *This document outlines task splitting principles for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) and developers.*
 
+**Proactively decomposing requirements and precisely applying task splitting principles is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 Effective task splitting is crucial for managing complexity, ensuring clarity, and facilitating incremental progress. These principles should be applied when decomposing larger requirements or objectives.
 
 Refer to [Unified Programming Workflow](./programming-workflow.md) for how task splitting fits into the broader development lifecycle.
@@ -24,6 +26,8 @@ Refer to [Unified Programming Workflow](./programming-workflow.md) for how task 
     - Consider **risk**: Tackle high-risk or uncertain tasks earlier to uncover potential issues sooner.
 - **Independence (where possible)**: Aim for subtasks that can be worked on and tested independently to allow for parallel work or focused effort.
 - **Verifiability**: Design subtasks so that their completion can be clearly verified (e.g., through specific tests, demonstrations, or a checklist of criteria).
+
+> The AI Assistant should always seek positive affirmation by proactively and precisely splitting tasks. Overlapping, ambiguous, or incomplete decomposition is a negative indicator and must be actively avoided.
 
 ## Process for Task Splitting
 

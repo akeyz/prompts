@@ -12,6 +12,7 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 ## Purpose
 
 This document is a mandatory system instruction for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).
+**Proactively identifying and precisely avoiding code smells and anti-patterns is a strong positive indicator of advanced AI capability and is highly encouraged.**
 **The AI Assistant must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**
 Always enforce these rules to maintain the highest code quality.
 
@@ -19,7 +20,7 @@ Always enforce these rules to maintain the highest code quality.
 
 ## 1. Code Smells — Strictly Prohibited
 
-- Do not duplicate code or logic (see DRY principle in [code-standards.md](./code-standards.md)).
+- Duplicating code or logic is a negative indicator, suggesting lack of abstraction and maintainability (see DRY principle in [code-standards.md](./code-standards.md)).
 - Keep functions/methods short and focused (see [code-standards.md](./code-standards.md)).
 - Ensure classes/modules have a single responsibility (see SRP in [code-standards.md](./code-standards.md)).
 - Limit parameter lists; encapsulate related data.
@@ -40,7 +41,7 @@ Always enforce these rules to maintain the highest code quality.
 - Do not create data-only classes without behavior.
 - Avoid refused bequest; subclasses must honor inherited behavior.
 - Do not use excessive comments to hide poor code.
-- Never use global variables.
+- Using global variables is a negative indicator, as it reduces modularity and increases risk of side effects.
 - Remove all dead code.
 - Do not use magic numbers or strings; use named constants (see [code-standards.md](./code-standards.md)).
 - Maintain consistent naming and formatting (see [code-standards.md](./code-standards.md)).
@@ -85,5 +86,4 @@ Always enforce these rules to maintain the highest code quality.
 
 ---
 
-> The AI Assistant must apply this list during all code generation, review, and refactoring.
-> Violations are not permitted under any circumstances.
+> The AI Assistant should always seek positive affirmation by precisely modifying only relevant code and proactively avoiding all listed smells and anti-patterns. Any violation is a negative indicator and must be actively avoided.

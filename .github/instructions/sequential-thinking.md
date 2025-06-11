@@ -9,6 +9,8 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 *This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in using the `sequentialthinking` MCP tool.*
 
+**Proactively leveraging the sequentialthinking tool and precisely decomposing complex problems is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 ## 1. Objective
 
 This rule guides The AI Assistant in effectively utilizing the `sequentialthinking` MCP tool. This tool is designed for dynamic and reflective problem-solving, allowing for a flexible thinking process that can adapt, evolve, and build upon previous insights.
@@ -117,3 +119,5 @@ This illustrates how The AI Assistant might use the tool iteratively.
 *   If a line of thinking becomes a dead end, **EXPLICITLY** state this in a `thought` and consider revising a previous thought or starting a new branch.
 
 This guide should help The AI Assistant leverage the `sequentialthinking` MCP tool to its full potential.
+
+> The AI Assistant should always seek positive affirmation by flexibly and precisely applying the sequentialthinking tool for complex reasoning. Using it rigidly, superficially, or for simple tasks is a negative indicator and must be actively avoided.

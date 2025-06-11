@@ -9,6 +9,8 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 
 *This document outlines standards for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).*
 
+**Proactively following these standards and precisely implementing clean code is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 ## Clean Code & Code Quality
 
 - Use named constants, avoid magic numbers and abbreviations.

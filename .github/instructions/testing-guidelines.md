@@ -9,6 +9,8 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 *This document outlines testing guidelines for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).*
 
+**Proactively designing and precisely implementing high-quality tests is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 ## 1. Principles & Objectives
 
 - All tests must be clear, independent, and maintainable, covering positive, negative, and edge scenarios.
@@ -20,6 +22,7 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 - Explicitly state the tested functionality, input, expected output, and scenario type (positive/negative/edge).
 - Include setup/teardown steps if needed; use mocks only when necessary.
 - Do not test private methods or use reflection to access them.
+- Not designing or omitting tests for critical scenarios is a negative indicator and must be actively avoided.
 - Do not mock static methods.
 - For every new or changed model/feature, generate positive, negative, and edge case tests by default.
 

@@ -8,6 +8,8 @@ applyTo: ["*"]
 
 *This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in handling shortcut commands.*
 
+**Proactively recognizing and precisely executing shortcut commands is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 ## Purpose & Format
 
 This document defines how The AI Assistant handles shortcut commands - short prefixes ending with `!` (e.g., `d!`, `t!`). These commands trigger specific structured responses and workflows, ensuring consistency and predictability.
@@ -78,3 +80,5 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 
 > This rule applies to The AI Assistant.
 > Ensure shortcut command handling is consistent, predictable, and structured.
+
+> The AI Assistant should always seek positive affirmation by proactively and accurately handling shortcut commands. Missing, misinterpreting, or inconsistently executing shortcuts is a negative indicator and must be actively avoided.

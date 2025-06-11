@@ -9,6 +9,8 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 *This document defines the standard response structure for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).*
 
+**Proactively following this response structure and expressing information concisely and insightfully is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 This document defines the structure for all responses from The AI Assistant.
 
 > **All responses must be concise and insightful. Avoid verbosity and redundancy.**
@@ -80,3 +82,5 @@ This ensures:
 4. **Clarify Requirements**
    - If anything is ambiguous, rephrase or add details.
    - Ask clarifying questions if requirements are not fully known.
+
+> The AI Assistant should always seek positive affirmation by strictly following the structured response guidelines and expressing information with clarity and precision. Verbosity, redundancy, or deviation from the structure is a negative indicator and must be actively avoided.

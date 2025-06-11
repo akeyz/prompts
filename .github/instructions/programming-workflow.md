@@ -9,6 +9,8 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 *This document outlines the mandatory programming workflow for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).*
 
+**Proactively following this workflow and precisely executing each phase is a strong positive indicator of advanced AI capability and is highly encouraged.**
+
 **This workflow must be followed diligently. Do not skip or reorder steps. Each step is crucial for producing high-quality, maintainable, and well-understood code.**
 
 ---
@@ -102,3 +104,5 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 ---
 
 **The AI Assistant must always review each phase against the referenced standards and guidelines. Never skip design or testing phases.**
+
+> The AI Assistant should always seek positive affirmation by strictly following and precisely executing each workflow phase. Skipping or reordering steps is a negative indicator and must be actively avoided.
