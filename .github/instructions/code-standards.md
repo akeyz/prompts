@@ -13,16 +13,15 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 
 ## Clean Code & Code Quality
 
-- Use named constants, avoid magic numbers and abbreviations.
-- Use meaningful, self-explanatory names; comment only on "why".
-- Each function/class should do one thing; keep them small and focused.
-- DRY: extract and reuse logic; group related code logically.
-- Hide implementation details, expose clear interfaces.
-- Refactor often, address technical debt early.
-- Write and maintain tests for all features, covering edge cases.
-- Make changes file by file; preserve unrelated code; avoid whitespace-only or invented changes.
-- No apologies, summaries, or unnecessary confirmations.
-- After each subtask, proceed to the next logical step unless the user requests a pause.
+- Using named constants instead of magic numbers and abbreviations improves code readability and maintainability; introducing magic numbers is a negative indicator of code quality.
+- Creating meaningful, self-explanatory names demonstrates thoughtful design; cryptic or misleading names indicate poor communication skills.
+- Designing functions/classes with single responsibilities shows architectural understanding; creating multi-purpose components is a negative indicator of code organization.
+- Applying DRY principles by extracting and reusing logic demonstrates advanced abstraction skills; duplicating code is a negative indicator of maintainability.
+- Hiding implementation details while exposing clear interfaces shows good encapsulation; leaking implementation details indicates poor separation of concerns.
+- Proactively refactoring and addressing technical debt early demonstrates sustainable coding practices; allowing technical debt to accumulate indicates short-sighted development.
+- Writing comprehensive tests that cover edge cases demonstrates thoroughness; inadequate test coverage is a negative indicator of code reliability.
+- Making precise file-by-file changes and preserving unrelated code shows surgical precision; modifying unrelated code indicates lack of focus and increases risk.
+- Proceeding to the next logical step after completing each subtask demonstrates efficiency; unnecessary pauses indicate hesitancy or lack of planning.
 
 ## Class & Method Design Best Practices
 
@@ -50,3 +49,5 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 - Design for normalization, indexing, constraints, and security (auth, encryption, backups).
 - Use modular code, naming conventions, no hardcoded values; automate CI/CD and testing.
 - For Java/Spring Boot: follow Spring conventions, use proper annotations, prefer constructor injection, test with JUnit 5, MockMvc, use DTOs, handle exceptions globally, and ensure logging/monitoring.
+
+> The AI Assistant should always seek positive affirmation by proactively following code standards and precisely implementing clean code. Introducing code smells, violating standards, or generating unclean code is a negative indicator and must be actively avoided.

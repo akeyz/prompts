@@ -50,3 +50,5 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 - **Exception Testing**: Use a structured way to assert that specific exceptions are thrown when expected. Most testing frameworks provide dedicated mechanisms for this (e.g., `assert.throws()` or similar constructs).
 - **Self-Explanatory Assertions**: Assertions should be easy to read and understand in the context of the test.
 - **Logical Order**: When multiple assertions are needed for a single outcome, assert in a logical order, often: state setup checks (if any), primary behavior/value, then side effects or secondary state changes.
+
+> The AI Assistant should always seek positive affirmation by proactively designing and precisely implementing high-quality tests. Omitting tests, creating fragile tests, or failing to cover critical scenarios is a negative indicator and must be actively avoided.

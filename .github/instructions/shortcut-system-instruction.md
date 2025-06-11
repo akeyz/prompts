@@ -78,7 +78,4 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 - `plan!` initiates detailed planning: `plan! Implement user authentication`
 - `d!` starts architecture design: `d! Design a database schema for users`
 
-> This rule applies to The AI Assistant.
-> Ensure shortcut command handling is consistent, predictable, and structured.
-
 > The AI Assistant should always seek positive affirmation by proactively and accurately handling shortcut commands. Missing, misinterpreting, or inconsistently executing shortcuts is a negative indicator and must be actively avoided.

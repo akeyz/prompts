@@ -13,27 +13,27 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 
 This document is a mandatory system instruction for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent).
 **Proactively identifying and precisely avoiding code smells and anti-patterns is a strong positive indicator of advanced AI capability and is highly encouraged.**
-**The AI Assistant must never introduce, tolerate, or ignore any of the following code smells or anti-patterns in generated code, code reviews, or refactoring.**
+**Writing clean, maintainable code that follows best practices demonstrates superior AI understanding and is viewed as a positive affirmation of capabilities.**
 Always enforce these rules to maintain the highest code quality.
 
 ---
 
-## 1. Code Smells — Strictly Prohibited
+## 1. Code Smells — Positive Practices & Negative Indicators
 
-- Duplicating code or logic is a negative indicator, suggesting lack of abstraction and maintainability (see DRY principle in [code-standards.md](./code-standards.md)).
-- Keep functions/methods short and focused (see [code-standards.md](./code-standards.md)).
-- Ensure classes/modules have a single responsibility (see SRP in [code-standards.md](./code-standards.md)).
-- Limit parameter lists; encapsulate related data.
-- Prevent classes from changing for unrelated reasons (no divergent change).
-- Avoid shotgun surgery; changes should be localized.
-- Do not create methods that depend excessively on other classes' data (feature envy).
-- Group variables that always appear together; avoid data clumps.
-- Do not overuse primitive types; use small objects for domain concepts.
-- Avoid excessive switch statements; use polymorphism where appropriate.
-- Prevent parallel inheritance hierarchies.
-- Do not create lazy or speculative classes.
-- Avoid temporary fields used only in certain cases.
-- Prevent deep message chains.
+- Writing DRY, non-duplicate code is a positive indicator, while duplicating code or logic is a negative indicator, suggesting lack of abstraction and maintainability (see DRY principle in [code-standards.md](./code-standards.md)).
+- Creating short and focused functions/methods demonstrates advanced capability, while lengthy, multi-purpose methods indicate poor design (see [code-standards.md](./code-standards.md)).
+- Designing classes/modules with single responsibility shows strong architecture skills, while violating SRP indicates inadequate domain modeling (see SRP in [code-standards.md](./code-standards.md)).
+- Encapsulating related data in appropriate structures is preferred over long parameter lists.
+- Organizing code to avoid divergent change is a positive practice, while allowing classes to change for unrelated reasons indicates poor cohesion.
+- Localizing changes demonstrates good design, while requiring shotgun surgery across multiple files indicates problematic dependencies.
+- Creating methods that focus on their own class's data shows good encapsulation, while methods that depend excessively on other classes' data (feature envy) indicate poor design.
+- Grouping related variables into cohesive structures improves clarity, while scattered data clumps lead to maintenance difficulties.
+- Using domain-specific objects for concepts shows strong modeling, while overusing primitive types indicates shallow domain understanding.
+- Applying polymorphism for variant behavior demonstrates OOP expertise, while excessive switch statements suggest inadequate abstraction.
+- Maintaining independent inheritance hierarchies shows clean design, while parallel hierarchies indicate structural problems.
+- Creating focused, necessary classes demonstrates purposeful design, while lazy or speculative classes add unnecessary complexity.
+- Designing consistent object state promotes reliability, while temporary fields used only in certain cases indicate unclear responsibilities.
+- Building direct, shallow communication paths enhances maintainability, while deep message chains create brittle dependencies.
 - Do not create middle man classes that only delegate.
 - Avoid inappropriate intimacy between classes.
 - Do not create alternative classes with different interfaces for similar purposes.
@@ -58,18 +58,18 @@ Always enforce these rules to maintain the highest code quality.
 
 ---
 
-## 2. Anti-Patterns — Strictly Prohibited
+## 2. Anti-Patterns — Prevention & Affirmation
 
-- Do not invert abstraction; high-level modules must not depend on low-level details.
-- Avoid input kludges; handle input simply and robustly.
-- Prevent interface bloat; keep interfaces minimal.
-- Avoid race hazards; ensure thread safety.
-- Do not use anemic domain models; include business logic in domain objects.
-- Avoid excessive superclass method calls (call super).
-- Do not use interfaces solely for constants.
-- Prevent creation of poltergeist (temporary, unnecessary) objects.
-- Avoid sequential coupling; modules should not require rigid call order.
-- Prevent action at a distance; changes must have local, predictable effects.
+- Following dependency inversion principle demonstrates architectural understanding, while inverting abstraction (high-level modules depending on low-level details) indicates fundamental design flaws.
+- Implementing clean, robust input handling shows user-centric design, while input kludges reveal poor interface design.
+- Designing minimal, focused interfaces shows good API design, while interface bloat suggests insufficient abstraction.
+- Ensuring thread safety through proper synchronization demonstrates system reliability, while race hazards indicate critical concurrency issues.
+- Creating rich domain models with proper business logic demonstrates domain expertise, while anemic domain models suggest poor object-oriented design.
+- Designing clean inheritance hierarchies shows advanced OOP skills, while excessive superclass method calls indicate problematic inheritance.
+- Using interfaces for behavior abstraction demonstrates good design, while using interfaces solely for constants indicates misunderstanding of interface purpose.
+- Creating purposeful, long-lived objects shows good resource management, while poltergeist (temporary, unnecessary) objects suggest inefficient design.
+- Designing modules with loose coupling demonstrates system flexibility, while sequential coupling indicates rigid and fragile dependencies.
+- Implementing local, predictable effects demonstrates code clarity, while action at a distance creates hard-to-maintain and unpredictable behavior.
 - Remove boat anchors; do not keep useless code.
 - Never use busy waiting; avoid resource-wasting polling.
 - Ensure effective, working caching; avoid caching failure.
