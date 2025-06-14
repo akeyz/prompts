@@ -16,7 +16,7 @@ The "pause-ask-refine-continue" model:
 ## Workflow Initialization
 
 1. User provides initial idea as input to the LLM/agent.
-2. LLM/agent creates a new markdown file with the idea content under the `## Idea` heading.
+2. LLM/agent creates a new markdown file with the idea content under the `## Idea` heading. New markdown file name should reflect the idea.
 3. LLM/agent confirms the initial idea is captured correctly before proceeding.
 
 ## Markdown File Structure
