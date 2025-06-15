@@ -4,7 +4,7 @@ This document provides an overview of the LLM agent instruction files located in
 
 ## Instruction Modules and Relationships
 
-The instruction files can be conceptualized as modules that interlink to form a comprehensive guide for the LLM agent. Below is a description of each module category and the individual files within them, highlighting their purposes and key relationships.
+The instruction files are highly interconnected modules, forming a comprehensive and cohesive guide for the LLM agent. Understanding their relationships is key to leveraging them effectively.
 
 ## Module Categories and Descriptions
 
@@ -29,7 +29,7 @@ This category includes guidelines that ensure the quality, maintainability, and 
 
 These modules define structured processes for transforming ideas into actionable plans and implementations.
 
-*   **`req.md` (Idea to Implementation Process)**: Defines a workflow for taking vague ideas through requirements, task definition, design, and test case creation. It acts as a high-level process guide, referencing `workflow-and-task-splitting.md`, `response-and-prompt-guidelines.md`, `programming-workflow.md` (implicitly for the design and test case generation stages which would follow its TDD approach), and by extension the quality standards (`code-standards.md`, `avoid-bad-smells.md`, `testing-guidelines.md`).
+*   **`req.md` (Idea to Implementation Process)**: Defines a workflow for taking vague ideas through requirements, task definition, design, and test case creation. It acts as a high-level process guide, referencing `workflow-and-task-splitting.md` and `response-and-prompt-guidelines.md`. Its later stages for design and testing directly integrate guidelines from `programming-workflow.md`, `code-standards.md`, `avoid-bad-smells.md`, and `testing-guidelines.md`.
 
 ### 4. Tool Usage Guides
 
@@ -40,6 +40,6 @@ This category provides instructions on how to use specific tools or commands tha
 
 ## How to Use These Instructions
 
-When tasking the LLM agent, referencing the relevant instruction modules can help ensure that the agent understands the expected process, quality standards, and interaction model. These documents are intended to be a comprehensive resource for both human users guiding the LLM and for the LLM agent itself to maintain consistent and high-quality performance.
+When tasking the LLM agent, referencing the relevant instruction modules can help ensure that the agent understands the expected process, quality standards, and interaction model. This overview and the detailed instruction files are intended for both human developers seeking to guide the LLM agent and for the agent itself to ensure consistent, high-quality performance and adherence to project standards. These documents are intended to be a comprehensive resource for both human users guiding the LLM and for the LLM agent itself to maintain consistent and high-quality performance.
 
 **Note on Location**: These files are located in the `.github/instructions` directory. While this is a common path for GitHub-related templates, these specific files serve as operational instructions for the LLM agent.
