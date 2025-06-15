@@ -42,6 +42,11 @@ LLM/agent manages a single `.md` file with these H2 headings:
   - Draft requirements based on understanding.
   - Apply Core Interaction Model.
 
+**This stage should follow guidelines from:**
+
+- `[workflow-and-task-splitting.md]` for requirement analysis and decomposition.
+- `[response-and-prompt-guidelines.md]` for user interaction.
+
 ### 2. Requirements to Tasks
 
 - **Input**: Approved `## Requirements` section.
@@ -50,6 +55,10 @@ LLM/agent manages a single `.md` file with these H2 headings:
   - Analyze requirements systematically.
   - Break down into MECE (Mutually Exclusive, Collectively Exhaustive) tasks.
   - Apply Core Interaction Model.
+
+**This stage should follow guidelines from:**
+
+- `[workflow-and-task-splitting.md]` for task breakdown.
 
 ### 3. Tasks to Design
 
@@ -62,6 +71,11 @@ LLM/agent manages a single `.md` file with these H2 headings:
   - Verify design completeness against tasks.
   - Apply Core Interaction Model.
 
+**This stage should follow guidelines from:**
+
+- `[programming-workflow.md]` for overall design process.
+- `[code-standards.md]` and `[avoid-bad-smells.md]` for design and code quality.
+
 ### 4. Design to Test Cases
 
 - **Input**: Approved `## Design` section.
@@ -72,3 +86,8 @@ LLM/agent manages a single `.md` file with these H2 headings:
   - Verify test coverage is complete.
   - Apply Core Interaction Model.
   - Add implementation recommendations to `## Next Steps` section.
+
+**This stage should follow guidelines from:**
+
+- `[testing-guidelines.md]` for test case design.
+- `[programming-workflow.md]` for integrating testing into the workflow.

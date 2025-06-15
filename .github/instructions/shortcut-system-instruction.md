@@ -26,14 +26,17 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 ### Planning
 
 - **plan!**
-  - Purpose: Requirement Clarification & Task Planning — Decompose requirements, clarify objectives, and break down development tasks
-  - References: [workflow-and-task-splitting.md], [response-and-prompt-guidelines.md], [programming-workflow.md]
+  - Purpose: Idea to Requirements Clarification — Initiates and executes the "Idea to Requirements" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
+  - References: `req.md` (section "Workflow Functions > 1. Idea to Requirements")
+- **tasks!**
+  - Purpose: Requirements to Tasks Breakdown — Initiates and executes the "Requirements to Tasks" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
+  - References: `req.md` (section "Workflow Functions > 2. Requirements to Tasks")
 
 ### Design Layer
 
 - **d!**
-  - Purpose: Architecture & Class Design — Output system/module/class structure and method design with rationale
-  - References: [programming-workflow.md], [code-standards.md], [avoid-bad-smells.md]
+  - Purpose: Tasks to Design Specification — Executes the "Tasks to Design" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
+  - References: `req.md` (section "Workflow Functions > 3. Tasks to Design"), [programming-workflow.md], [code-standards.md], [avoid-bad-smells.md]
 - **doc!**
   - Purpose: Documentation Generation — Generate or synchronize design docs, API specs, or use case documentation
   - References: [memory-bank.instructions.md], [response-and-prompt-guidelines.md]
@@ -41,8 +44,8 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 ### Implementation Layer
 
 - **t!**
-  - Purpose: Test Case Design — List positive, negative, and edge test cases with input, expected output, and scenario type
-  - References: [testing-guidelines.md], [programming-workflow.md]
+  - Purpose: Design to Test Case Generation — Executes the "Design to Test Cases" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
+  - References: `req.md` (section "Workflow Functions > 4. Design to Test Cases"), [testing-guidelines.md], [programming-workflow.md]
 - **tdd!**
   - Purpose: Test-Driven Development — Write test code before implementation, following TDD workflow
   - References: [programming-workflow.md], [testing-guidelines.md], [code-standards.md]
