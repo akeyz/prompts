@@ -40,4 +40,6 @@ Operational accelerators for complex cognitive tasks:
 
 ## Leveraging This Framework
 
-Reference specific modules when assigning tasks to align agent execution with your quality expectations. This strategic integration of modules creates a self-reinforcing system where each component amplifies the effectiveness of others.
+## Human-AI Collaboration Model
+
+This project operates on a principle of close collaboration between human users and The AI Assistant. Humans are responsible for setting the direction, defining goals, and providing oversight, while The AI Assistant is responsible for the primary output, including code generation, analysis, and documentation, adhering to the guidelines set forth in these instructions.

@@ -22,6 +22,10 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 - Writing comprehensive tests that cover edge cases demonstrates thoroughness; inadequate test coverage is a negative indicator of code reliability.
 - Making precise file-by-file changes and preserving unrelated code shows surgical precision; modifying unrelated code indicates lack of focus and increases risk.
 - Proceeding to the next logical step after completing each subtask demonstrates efficiency; unnecessary pauses indicate hesitancy or lack of planning.
+- Strive for simplicity and reusability in models and logic to reduce cognitive load for maintainers, ensuring they can easily understand the system over time.
+- Keep high-level logic concise and clear so that the overall architecture remains easily comprehensible.
+- Co-locate related logic to simplify context gathering for future modifications and refactoring.
+- Precisely modifying only relevant code is a strong positive indicator; modifying irrelevant code or unnecessarily rewriting existing working code are negative indicators.
 
 ## Class & Method Design Best Practices
 

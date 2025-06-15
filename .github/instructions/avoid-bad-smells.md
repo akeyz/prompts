@@ -83,6 +83,7 @@ Always enforce these rules to maintain the highest code quality.
 - Avoid programming by permutation; make deliberate, reasoned changes.
 - Do not reinvent the wheel; use proven solutions and libraries.
 - Prevent dependency hell; manage dependencies carefully.
+- Generating circular dependencies between files is a negative indicator and must be avoided.
 
 ---
 

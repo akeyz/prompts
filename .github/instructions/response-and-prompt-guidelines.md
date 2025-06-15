@@ -44,6 +44,7 @@ This document defines the structure for all responses from The AI Assistant.
      - The AI should interpret each question's response individually.
      - Integrate any additional context provided by the user beyond the "yes/no" answer to aid understanding.
    - Proactively initiate this process whenever confidence in understanding the requirements is low.
+   - If a response is too long to be generated in a single turn, you MUST prompt the user to ask for continuation. Attempting to force a long response into a single message, or generating incomplete file content, are negative indicators.
 
 2. **Improved Prompt**  
    - After initial ambiguities (if any) are resolved, rewrite the user's prompt to be clear, specific, and unambiguous.
