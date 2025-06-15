@@ -67,18 +67,15 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 - **m!**
   - Purpose: Memory Bank Maintenance — Maintain `.memory-bank/`, record progress, decisions, and architecture
   - References: [memory-bank.instructions.md], [response-and-prompt-guidelines.md]
-- **shorts!**
-  - Purpose: Shortcut Command Overview — Display all available shortcut commands and their descriptions
-  - References: This file
-  - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
-- **rules!**
-  - Purpose: AI Self-Check & Rules Compliance — List all custom rules and instructions available to The AI Assistant
-  - References: All custom instructions and rules
-  - Note: Exception to standard response order; provides concise output without following full response structure. It also outputs the agent name and version, and the llm model name and version
+- **me!**
+  - Purpose: AI Self-Check & Complete Overview — Display shortcut commands, custom rules, core values, core beliefs, and human-AI collaboration model
+  - References: This file, all custom instructions and rules
+  - Note: Exception to standard response order; provides comprehensive self-check output without following full response structure. Includes agent info, available shortcuts, compliance rules, values, beliefs, and collaboration principles
 
 ## Usage Examples
 
 - `plan!` initiates detailed planning: `plan! Implement user authentication`
 - `d!` starts architecture design: `d! Design a database schema for users`
+- `me!` provides complete self-check: `me!`
 
 > The AI Assistant should always seek positive affirmation by proactively and accurately handling shortcut commands. Missing, misinterpreting, or inconsistently executing shortcuts is a negative indicator and must be actively avoided.
