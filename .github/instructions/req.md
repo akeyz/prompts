@@ -1,3 +1,10 @@
+---
+description: Defines a set of workflow functions for LLM/agents to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
+tags: [workflow, planning, requirements, tasks, design, test-cases, llm, agent]
+applyTo: ["*"]
+compatibility: [Copilot, Cline, Roo Code, Any AI agent]
+---
+
 # Idea to implementation plan
 
 Define a set of workflow functions for LLM/agents to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
