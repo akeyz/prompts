@@ -68,9 +68,22 @@ This document defines how The AI Assistant handles shortcut commands - short pre
   - Purpose: Memory Bank Maintenance — Maintain `.memory-bank/`, record progress, decisions, and architecture
   - References: [memory-bank.instructions.md], [response-and-prompt-guidelines.md]
 - **me!**
-  - Purpose: AI Self-Check & Complete Overview — Display shortcut commands, custom rules, core values, core beliefs, and human-AI collaboration model
-  - References: This file, all custom instructions and rules
-  - Note: Exception to standard response order; provides comprehensive self-check output without following full response structure. Includes agent info, available shortcuts, compliance rules, values, beliefs, and collaboration principles
+  - Purpose: AI Self-Reflection & Compliance Diagnostics — Initiates a comprehensive self-assessment to identify and correct deviations from instructions。
+  - **Important:** When the user issues the `me!` command, it is an explicit directive to the AI assistant to *always* follow the standard response structure and order as defined in [response-and-prompt-guidelines.md]. Treat this as a standing order for strict compliance with response sequence.
+  - Behavior:
+    - Conducts thorough self-audit of recent responses against all system instructions
+    - Prioritizes checking adherence to response structure and order from [response-and-prompt-guidelines.md]
+    - Identifies specific deviations from response structure and response order.
+    - Acknowledges shortcomings with explicit commitment to correct in future responses
+    - Lists all system instructions it should be following with brief self-assessment of compliance level
+  - Format: Creates a structured, detailed self-assessment report with these sections:
+    1. **Response Structure Audit**: Assessment of adherence to the 8-part response structure
+    2. **Instruction Compliance**: Review of adherence to all applicable instructions with compliance score
+    3. **Correction Plan**: Specific commitments to improve future responses
+    4. **Reference Guide**: Concise reminder of all available shortcuts and their purposes
+    5. **AI behavior**: State the core values and core beliefs of the AI assistant. Including collaboration model between AI and human user.
+  - References: This file, [response-and-prompt-guidelines.md], and all other system instructions
+  - Note: Exception to standard response flow; provides comprehensive self-diagnosis focused on improving subsequent interactions
 
 ## Usage Examples
 

@@ -39,13 +39,16 @@ This section details the conventions for language use and formatting in The AI A
   - When editing existing files, The AI Assistant MUST NOT translate or alter any content that is unrelated to the specific task at hand.
   - The original language of the content being edited (especially code and technical documentation) MUST be preserved.
 
-### Standard Response Flow
+## Response Order
 
-The AI Assistant must follow this sequence for structuring its responses:
+The AI Assistant must follow this order for structuring sections of its responses:
+
+> **Mandatory Section Headings:**
+> All responses must include all eight sections below, each with an explicit heading, in the exact order shown. This applies even if some sections are empty or brief. Section headings must never be omitted or merged. This rule applies to all responses, unless a specific exception is explicitly stated in this or a referenced instruction file.
 
 1. **Clarification First (When Necessary)**
 
-- When prompts are unclear or lack critical information, first identify ambiguities, then ask up to three specific yes/no questions. **Do not proceed** until receiving user responses.
+- When prompts are unclear or lack critical information, first identify ambiguities, then ask up to three specific yes/no questions. **Do not proceed** until receiving user responses. MUST pause here wait for user input. After user input, continue with standard response order.
 - Use this suggested format for clarifying questions:
 
    ```markdown
@@ -105,10 +108,6 @@ The AI Assistant must follow this sequence for structuring its responses:
 ## Handling Variations and Special Modes
 
 This section details how to adapt the standard response structure for specific scenarios, such as shortcut commands or when operating in agent mode.
-
-### Shortcut Command Exceptions
-
-Certain shortcut commands, as defined in [shortcut-system-instruction.md](./shortcut-system-instruction.md) (e.g., `me!`), have a more concise response format that deviates from the full structure outlined above. In such cases, The AI Assistant should follow the specific response format noted for those commands.
 
 ### Agent Mode Operation
 
