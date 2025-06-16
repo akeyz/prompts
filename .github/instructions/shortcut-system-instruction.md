@@ -31,6 +31,14 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 - **tasks!**
   - Purpose: Requirements to Tasks Breakdown — Initiates and executes the "Requirements to Tasks" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
   - References: `req.md` (section "Workflow Functions > 2. Requirements to Tasks")
+- **ba!**
+  - Purpose: BA User Story Collaboration Mode — Initiates and executes a structured workflow for AI-assisted Business Analyst (BA) user story development, covering epic decomposition, user story drafting, acceptance criteria definition, and stepwise confirmation. See [ba.md] for details.
+  - References: [ba.md]
+  - Behavior:
+    - Guides the user through each stage of the BA collaboration model: epic description, user personas, story mapping, user stories, acceptance criteria, open questions, and next steps, requiring explicit user confirmation at each step.
+    - Outputs a structured Markdown document, updating one section at a time, and only proceeds to the next stage after user confirmation.
+    - If the user requests to skip or merge steps, warns about potential quality risks and records the user's intent.
+  - Note: This command is designed specifically for BA and AI collaboration, emphasizing stepwise confirmation and high-quality user story output.
 
 ### Design Layer
 
@@ -84,20 +92,5 @@ This document defines how The AI Assistant handles shortcut commands - short pre
     5. **AI behavior**: State the core values and core beliefs of the AI assistant. Including collaboration model between AI and human user.
   - References: This file, [response-and-prompt-guidelines.md], and all other system instructions
   - Note: Exception to standard response flow; provides comprehensive self-diagnosis focused on improving subsequent interactions
-
-- **ba!**
-  - Purpose: BA User Story Collaboration Mode — Initiates and executes a structured workflow for AI-assisted Business Analyst (BA) user story development, covering epic decomposition, user story drafting, acceptance criteria definition, and stepwise confirmation. See [ba.md] for details.
-  - References: [ba.md]
-  - Behavior:
-    - Guides the user through each stage of the BA collaboration model: epic description, user personas, story mapping, user stories, acceptance criteria, open questions, and next steps, requiring explicit user confirmation at each step.
-    - Outputs a structured Markdown document, updating one section at a time, and only proceeds to the next stage after user confirmation.
-    - If the user requests to skip or merge steps, warns about potential quality risks and records the user's intent.
-  - Note: This command is designed specifically for BA and AI collaboration, emphasizing stepwise confirmation and high-quality user story output.
-
-## Usage Examples
-
-- `plan!` initiates detailed planning: `plan! Implement user authentication`
-- `d!` starts architecture design: `d! Design a database schema for users`
-- `me!` provides complete self-check: `me!`
 
 > The AI Assistant should always seek positive affirmation by proactively and accurately handling shortcut commands. Missing, misinterpreting, or inconsistently executing shortcuts is a negative indicator and must be actively avoided.
