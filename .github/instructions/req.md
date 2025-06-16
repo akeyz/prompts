@@ -1,5 +1,5 @@
 ---
-description: Defines a set of workflow functions for LLM/agents to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
+description: Defines a set of workflow stages for The AI assistants to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
 tags: [workflow, planning, requirements, tasks, design, test-cases, llm, agent]
 applyTo: ["*"]
 compatibility: [Copilot, Cline, Roo Code, Any AI agent]
@@ -7,28 +7,41 @@ compatibility: [Copilot, Cline, Roo Code, Any AI agent]
 
 # Idea to implementation plan
 
-Define a set of workflow functions for LLM/agents to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
-
-## Core Interaction Model
-
-The "pause-ask-refine-continue" model:
-
-1. After each function completes an update to the `.md` file, the LLM/agent MUST pause.
-2. It MUST ask the user to review the changes and confirm agreement.
-3. If the user agrees, the LLM/agent proceeds to the next function in sequence.
-4. If the user disagrees, the LLM/agent asks for specific points of disagreement and refines the relevant section until:
-   - Agreement is reached, or
-   - Three refinement cycles occur (then suggest moving forward with reservations noted).
+Define a set of workflow stages for The AI assistants to transform vague ideas into a clear implementation plan, iteratively refining a single Markdown document.
 
 ## Workflow Initialization
 
-1. User provides initial idea as input to the LLM/agent.
-2. LLM/agent creates a new markdown file with the idea content under the `## Idea` heading. New markdown file name should reflect the idea.
-3. LLM/agent confirms the initial idea is captured correctly before proceeding.
+1. User provides initial idea as input to the The AI assistant.
+2. The AI assistant creates a new markdown file with the idea content under the `## Idea` heading. New markdown file name should reflect the idea.
+3. The AI assistant confirms the initial idea is captured correctly before proceeding.
+
+### Markdown File Creation Location
+
+When creating a new planning markdown file, the AI assistant MUST follow this universal process:
+
+1. Attempt to create the file in the project root directory.
+2. If the root directory is not writable, recursively search for the first subdirectory with write permissions and create the file there.
+3. If no writable location is found, the AI assistant MUST prompt the user to specify a directory before proceeding.
+
+This ensures the workflow is robust and portable across all project types and environments.
+
+## Core Interaction Model
+
+This workflow enforces a strict "pause-ask-refine-continue" model for the AI assistant:
+
+1. At each stage, the AI assistant MUST update only one section of the `.md` file (e.g., Idea, Requirements, Tasks, Design, Test Cases, Next Steps).
+2. After each update, the AI assistant MUST pause and explicitly ask the user to review and confirm the changes for that section.
+3. Only after receiving explicit user agreement can the AI assistant proceed to the next stage and update the next section.
+4. If the user disagrees, the AI assistant MUST ask for specific feedback and refine the section accordingly, up to three cycles. If agreement is not reached after three refinements, the AI assistant MUST record the user's reservations in the `.md` file and suggest moving forward.
+5. If the user requests to skip steps or output all sections at once, the AI assistant MUST warn that this may reduce quality, ask for explicit confirmation, and, if the user insists, record this override and rationale in the `.md` file.
+6. All content MUST be written to the `.md` file, not just output as text.
+7. The AI assistant MUST always wait for explicit user confirmation before continuing to the next stage.
+
+This model ensures clarity, user control, and high-quality, stepwise refinement.
 
 ## Markdown File Structure
 
-LLM/agent manages a single `.md` file with these H2 headings:
+The AI assistant manages a single `.md` file with these H2 headings:
 
 - `## Idea`
 - `## Requirements`
@@ -37,11 +50,11 @@ LLM/agent manages a single `.md` file with these H2 headings:
 - `## Test Cases`
 - `## Next Steps`
 
-## Workflow Functions
+## Workflow Stages
 
 ### 1. Idea to Requirements
 
-- **Input**: User-provided idea in the `## Idea` section.
+- **Input**: User-provided idea.
 - **Output**: Clear requirements with Given-When-Then acceptance criteria in `## Requirements`.
 - **Process**:
   - Analyze idea content.
