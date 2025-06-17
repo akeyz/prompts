@@ -1,5 +1,7 @@
 # Cline Community Prompts
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cuipengfei/prompts)
+
 This repository serves as a community-driven collection of .clinerules & workflows for Cline.
 
 ## Contributing
