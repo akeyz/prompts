@@ -1,63 +1,63 @@
 [中文版](README.md)
 
-# AI Agent Instruction Framework
+# How to Brainwash GitHub Copilot to Follow Your Orders 🧠🤖
 
-## Overview
+## What's This About?
 
-This repository hosts a comprehensive suite of system instructions meticulously crafted to direct AI agents (such as GitHub Copilot, Cline, Roo Code, and similar platforms) in executing complex software development tasks. The framework emphasizes precision, adherence to quality standards, and a methodical, disciplined approach to development.
+Tired of AI agents giving you garbage code that looks like it was written by a caffeinated intern at 3 AM? This repo is your secret weapon to **brainwash GitHub Copilot to follow your orders** (and other AI coding assistants) into becoming disciplined, quality-obsessed code ninjas.
 
-These instructions are designed to augment the capabilities of AI agents by enforcing established best practices in software engineering, including coding standards, design principles, testing methodologies, workflow management, and effective human-AI collaboration.
+Think of this as a boot camp for AI agents - except instead of push-ups and shouting, we use meticulously crafted system instructions that turn chaotic AI behavior into surgical precision. No more "close enough" code. No more "it works on my machine" disasters.
 
-## Who Can Benefit?
+## Who Needs This Brainwashing Manual?
 
-This framework is beneficial for:
+*   **Developers** who are sick of AI writing spaghetti code and want their coding assistant to actually assist (novel concept, right?)
+*   **Teams** who want to integrate AI into their workflow without ending up with a codebase that looks like a digital crime scene
+*   **Researchers and Engineers** obsessed with making AI-generated code actually reliable, maintainable, and not a future liability
+*   **Business Analysts and Product Owners** who need AI agents that can actually understand requirements without hallucinating features that don't exist
 
-*   **Developers** utilizing or constructing AI-assisted coding tools and seeking to standardize AI behavior.
-*   **Teams** aiming to integrate AI agents into their software development lifecycle with consistent and high-quality outputs.
-*   **Researchers and Engineers** focused on enhancing the reliability, quality, and predictability of AI-generated code and development processes.
-*   **Business Analysts and Product Owners** collaborating with AI agents for requirements elicitation and user story generation.
+## The Instruction Arsenal
 
-## Instruction Modules
+These instructions are organized into tactical modules that work together like a well-oiled mind-control machine:
 
-The instructions are organized into several key modules, mirroring the structure outlined in `[.github/instructions/overview.md](.github/instructions/overview.md)`:
+*   **Core Behavior Definition:** The fundamental brainwashing protocols that shape how agents think and operate
+*   **Standards & Quality Specifications:** The iron-clad rules that prevent AI from writing code that makes senior developers cry
+*   **Process Templates:** Step-by-step mind control workflows that transform vague ideas into bulletproof implementations
+*   **Tool Usage Guides:** Advanced techniques for leveraging specialized tools to make AI agents work smarter, not harder
 
-*   **Core Behavior Definition:** Foundational principles governing agent operations and interaction.
-*   **Standards & Quality Specifications:** Guardrails ensuring excellence in all generated artifacts and processes.
-*   **Process Templates:** Systematic workflows for transforming concepts into implementable solutions.
-*   **Tool Usage Guides:** Guidelines for leveraging specialized (potentially hypothetical) tools to accelerate complex cognitive tasks.
+## The Instruction Files Breakdown (aka "Your New AI Overlords")
 
-## Detailed File Descriptions
+Here's what each file in the `[.github/instructions/](.github/instructions/)` directory does to bend AI to your will:
 
-Below is a description of each instruction file located in the `[.github/instructions/](.github/instructions/)` directory:
+### Mission Control Center
+*   `[.github/instructions/overview.md](.github/instructions/overview.md)`: The master plan - how all these instruction modules work together to create the ultimate AI coding minion
 
-### General Overview
-*   `[.github/instructions/overview.md](.github/instructions/overview.md)`: Provides a high-level strategic overview of all instruction modules, their purpose, and how they integrate to form a cohesive framework for AI agent behavior.
+### Brain Surgery Department (Core Behavior)
+*   `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`: Teaches AI agents to remember stuff between sessions (revolutionary, we know). Creates a persistent "brain" so your AI doesn't suffer from digital amnesia every time you restart a conversation.
+*   `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`: Forces AI to communicate like a professional human instead of a verbose chatbot having an existential crisis. Includes the sacred 8-section response structure.
+*   `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`: The TDD gospel according to AI - a comprehensive workflow that prevents your AI from cowboy coding its way to disaster.
+*   `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`: Teaches AI to break down complex problems without having a mental breakdown (MECE principles for the win).
 
-### Core Behavior Definition
-*   `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`: Details the "Memory Bank" system, a crucial component for AI agents to maintain project knowledge and context across sessions. It outlines the structure of memory files (e.g., `projectbrief.md`, `activeContext.md`) and defines workflows for their utilization and updates.
-*   `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`: Specifies structured interaction protocols for AI agents, including response formatting (e.g., a mandatory 8-section structure), language conventions (e.g., Chinese for user explanations, English for technical terms), and core operational principles like clarity and critical skepticism.
-*   `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`: Lays out a comprehensive, Test-Driven Development (TDD) oriented lifecycle for AI agents. This workflow covers phases from preparation and understanding (including Memory Bank consultation) through design, test implementation, coding, and refactoring, to final review.
-*   `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`: Describes core principles (MECE, clear objectives, manageable size, prioritization, independence, verifiability) and a systematic process for decomposing complex requirements into smaller, actionable, and verifiable subtasks.
+### Quality Control Department (No More Garbage Code)
+*   `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`: The holy commandments of clean code - SOLID principles, DRY practices, and everything else that separates professional developers from script kiddies.
+*   `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`: A comprehensive hit list of code smells and anti-patterns that must be eliminated with extreme prejudice. Your AI will learn to spot and avoid these like they're radioactive.
+*   `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`: How to write tests that actually test things (shocking concept). Covers positive, negative, and edge cases so your code doesn't explode in production.
 
-### Standards & Quality Specifications
-*   `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`: Defines standards for clean code and overall code quality. It covers naming conventions, the Single Responsibility Principle (SRP), DRY (Don't Repeat Yourself), SOLID principles, OWASP security guidelines, and best practices for class/method design, database interactions, DevOps, and specific technology stacks (e.g., Java/Spring Boot).
-*   `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`: Lists common code smells (e.g., duplicate code, long methods, feature envy, magic numbers, excessive comments) and anti-patterns (e.g., input kludges, interface bloat, anemic domain models, god objects) that AI agents must proactively identify and strictly avoid.
-*   `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`: Provides comprehensive guidelines for designing and implementing high-quality tests. It includes principles for test clarity and independence, coverage of positive/negative/edge scenarios, a recommended test case template, and best practices for assertions.
+### Process Engineering (Making Ideas Reality)
+*   `[.github/instructions/req.md](.github/instructions/req.md)`: The magical transformation machine that turns your half-baked ideas into concrete implementation plans through iterative refinement and the "pause-ask-refine-continue" protocol.
+*   `[.github/instructions/ba.md](.github/instructions/ba.md)`: Specialized training for AI agents to work with Business Analysts without making them question their career choices. Transforms epics into user stories that actually make sense.
 
-### Process Templates
-*   `[.github/instructions/req.md](.github/instructions/req.md)`: Outlines a structured workflow for transforming vague ideas into concrete and actionable implementation plans. This process involves iteratively refining a single Markdown document through stages: Idea, Requirements (with Gherkin-style acceptance criteria), Tasks, Design (including Mermaid diagrams), and Test Cases, all managed via a "pause-ask-refine-continue" interaction model.
-*   `[.github/instructions/ba.md](.github/instructions/ba.md)`: Equips AI assistants with a strategic framework to support Business Analysts (BAs) in crafting high-quality agile artifacts. It focuses on transforming epics into focused user stories with precise acceptance criteria, using a disciplined "pause-ask-refine-continue" protocol for AI-BA collaboration and structured document management.
+### Advanced Weaponry (Power User Tools)
+*   `[.github/instructions/sequential-thinking.md](.github/instructions/sequential-thinking.md)`: Instructions for using the hypothetical `sequentialthinking` MCP tool to make AI agents think step-by-step instead of just vomiting random solutions.
+*   `[.github/instructions/shortcut-system-instruction.md](.github/instructions/shortcut-system-instruction.md)`: Shortcut commands (`plan!`, `d!`, `t!`, etc.) that trigger specific workflows. Because typing is for peasants.
 
-### Tool Usage Guides
-*   `[.github/instructions/sequential-thinking.md](.github/instructions/sequential-thinking.md)`: Guides AI agents on the effective use of a hypothetical `sequentialthinking` MCP (Multi-Cognitive Process) tool. This tool is envisioned for dynamic and reflective problem-solving, enabling complex problem decomposition, iterative planning, and hypothesis-driven reasoning.
-*   `[.github/instructions/shortcut-system-instruction.md](.github/instructions/shortcut-system-instruction.md)`: Defines how AI agents should recognize and execute user-defined shortcut commands (e.g., `plan!`, `d!`, `t!`, `m!`, `me!`). These shortcuts trigger specific, pre-defined workflows for various development tasks, enhancing operational efficiency.
+## How to Deploy This Mind Control Technology
 
-## How to Use
+These instructions aren't just documentation - they're the ammunition you need to transform chaotic AI assistants into precision coding machines:
 
-These instructions are primarily intended to be used as system prompts or guiding documents for advanced AI agents involved in software development. Developers and teams can:
+*   **Feed them to your AI frameworks** as system prompts and watch the magic happen
+*   **Use them as your reference bible** when crafting prompts that actually get results
+*   **Customize and extend them** because every project has its own special brand of complexity
 
-*   Integrate these instructions into their AI interaction frameworks.
-*   Use them as a reference for crafting effective prompts for AI assistants.
-*   Adapt and extend them to suit specific project needs and AI capabilities.
+The end goal? AI agents that produce code so clean, maintainable, and well-tested that your future self will thank you instead of cursing your name. Because let's face it - we've all seen what happens when AI goes rogue with a keyboard.
 
-By adhering to this framework, AI agents can produce more reliable, maintainable, and high-quality software, while collaborating more effectively with human developers and stakeholders.
+Ready to turn your AI coding assistant from a chaotic intern into a disciplined senior developer? Clone this repo and start the brainwashing process. Your codebase will thank you. 🚀
