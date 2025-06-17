@@ -1,4 +1,4 @@
-[English Version](README.en.md)
+[English Version](README.en.md) | [古文版](README.guwen.md)
 
 # 如何对 GitHub Copilot 进行洗脑改造 🧠🤖
 
