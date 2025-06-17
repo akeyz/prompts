@@ -54,6 +54,35 @@ How each file in `[.github/instructions/](.github/instructions/)` bends AI to yo
 2.  **Observe**: Watch as your AI transforms from a wild code-slinging beast into a focused, quality-driven partner.
 3.  **Refine**: These are living documents. Adapt them to your project's specific neuroses.
 
+## How to Use with GitHub Copilot in VS Code (Correct Structure!)
+
+Want to brainwash Copilot directly in VS Code? Use the right structure:
+
+1. Open VS Code settings (`Ctrl+,` or `Cmd+,`).
+2. Search for `github.copilot.chat.codeGeneration.instructions`.
+3. Add your instructions as an array of objects, each with a `text` or `file` property. Example:
+
+```jsonc
+"github.copilot.chat.codeGeneration.instructions": [
+    { "text": "Avoid generating code that matches public code exactly." },
+    { "file": "../prompts/.github/instructions/req.md" },
+    { "file": "../prompts/.github/instructions/ba.md" },
+    { "file": "../prompts/.github/instructions/overview.md" },
+    { "file": "../prompts/.github/instructions/memory-bank.instructions.md" },
+    { "file": "../prompts/.github/instructions/code-standards.md" },
+    { "file": "../prompts/.github/instructions/workflow-and-task-splitting.md" },
+    { "file": "../prompts/.github/instructions/programming-workflow.md" },
+    { "file": "../prompts/.github/instructions/response-and-prompt-guidelines.md" },
+    { "file": "../prompts/.github/instructions/testing-guidelines.md" },
+    { "file": "../prompts/.github/instructions/avoid-bad-smells.md" },
+    { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
+]
+```
+4. Save and restart Copilot Chat if needed.
+5. Watch Copilot follow your orders (or at least try).
+
+**Pro tip:** Use relative paths to your instruction files, or add custom text rules. The more specific, the stronger the brainwashing.
+
 ## Disclaimer
 
 Brainwashing AI is an art, not an exact science. Results may vary. May cause your AI to develop a superiority complex. Use responsibly.

@@ -54,6 +54,35 @@
 2.  **观察**：见证你的 AI 从狂野的代码投掷野兽转变为专注、以质量为导向的伙伴。
 3.  **改进**：这些是活文档。根据你项目的特定“神经症”进行调整。
 
+## 如何在 VS Code 和 Copilot 里洗脑（正确结构！）
+
+想在 VS Code 里直接洗脑 Copilot？请用正确结构：
+
+1. 打开 VS Code 设置（`Ctrl+,` 或 `Cmd+,`）。
+2. 搜索 `github.copilot.chat.codeGeneration.instructions`。
+3. 按如下格式添加指令，每条是一个对象，包含 `text` 或 `file` 属性。例如：
+
+```jsonc
+"github.copilot.chat.codeGeneration.instructions": [
+    { "text": "避免生成与公开代码完全一致的代码。" },
+    { "file": "../prompts/.github/instructions/req.md" },
+    { "file": "../prompts/.github/instructions/ba.md" },
+    { "file": "../prompts/.github/instructions/overview.md" },
+    { "file": "../prompts/.github/instructions/memory-bank.instructions.md" },
+    { "file": "../prompts/.github/instructions/code-standards.md" },
+    { "file": "../prompts/.github/instructions/workflow-and-task-splitting.md" },
+    { "file": "../prompts/.github/instructions/programming-workflow.md" },
+    { "file": "../prompts/.github/instructions/response-and-prompt-guidelines.md" },
+    { "file": "../prompts/.github/instructions/testing-guidelines.md" },
+    { "file": "../prompts/.github/instructions/avoid-bad-smells.md" },
+    { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
+]
+```
+4. 保存并重启 Copilot Chat（如有必要）。
+5. 见证 Copilot 服从你的意志（至少会努力服从）。
+
+**小贴士：** 路径用相对路径，或自定义 text 规则。越具体，洗脑效果越强。
+
 ## 免责声明
 
 给 AI 洗脑是门艺术，而非精确科学。结果可能因人而异。可能导致你的 AI 产生优越感。请负责任地使用。
