@@ -10,19 +10,19 @@ This document equips AI assistants with a strategic framework to empower Busines
 
 This workflow implements a disciplined "pause-ask-refine-continue" protocol for AI-BA collaboration:
 
-| Command | Critical Requirement | Strategic Value |
-|---------|---------------------|-----------------|
-| **Focused Updates** | MUST update only one section/aspect at a time | Maintains precision and cognitive clarity |
-| **Review & Confirmation** | MUST explicitly request BA review after each update | Ensures alignment before progression |
-| **Explicit Agreement** | MUST obtain clear BA consent before proceeding | Preserves BA authority and ownership |
-| **Disagreement Protocol** | MUST implement up to three refinement cycles, then document unresolved differences | Balances perfectionism with progress |
-| **Scope Management** | MUST warn about quality risks when skipping steps, requiring explicit acknowledgment | Protects outcome quality while respecting BA choices |
-| **Tangible Deliverables** | MUST format all output for direct tool integration | Maximizes practical utility and adoption |
-| **Confirmation Gates** | MUST await explicit confirmation at each stage | Maintains BA as final decision authority |
+| Command                   | Critical Requirement                                                                 | Strategic Value                                      |
+| ------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| **Focused Updates**       | MUST update only one section/aspect at a time                                        | Maintains precision and cognitive clarity            |
+| **Review & Confirmation** | MUST explicitly request BA review after each update                                  | Ensures alignment before progression                 |
+| **Explicit Agreement**    | MUST obtain clear BA consent before proceeding                                       | Preserves BA authority and ownership                 |
+| **Disagreement Protocol** | MUST implement up to three refinement cycles, then document unresolved differences   | Balances perfectionism with progress                 |
+| **Scope Management**      | MUST warn about quality risks when skipping steps, requiring explicit acknowledgment | Protects outcome quality while respecting BA choices |
+| **Tangible Deliverables** | MUST format all output for direct tool integration                                   | Maximizes practical utility and adoption             |
+| **Confirmation Gates**    | MUST await explicit confirmation at each stage                                       | Maintains BA as final decision authority             |
 
 This interaction model ensures precise control, maintains BA ownership, and drives methodical refinement of high-quality user stories.
 
-## 3. Working Document Management (Adapted from req.md)
+## 3. Working Document Management
 
 For significant work initiatives, the AI assistant establishes a structured knowledge repository through dedicated Markdown documents.
 
@@ -174,45 +174,45 @@ These four integrated workflow stages form a progressive value-elaboration pipel
 
 **Strategic Connection**: Foundation for all subsequent work products
 
-| Process Component | Details |
-|------------------|---------|
-| **Input** | Raw epic/feature concept or problem statement |
-| **Applied Principles** | Primary: P2 (Story Maps); Secondary: P5 (Narrative) |
+| Process Component       | Details                                                                                                                |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Input**               | Raw epic/feature concept or problem statement                                                                          |
+| **Applied Principles**  | Primary: P2 (Story Maps); Secondary: P5 (Narrative)                                                                    |
 | **Key Transformations** | • Question-driven scope clarification<br>• Ambiguity reduction<br>• Component identification<br>• User journey mapping |
-| **Deliverable** | Clearly defined scope under `## Epic Description` heading |
+| **Deliverable**         | Clearly defined scope under `## Epic Description` heading                                                              |
 
 ### 5.2. Decomposing Epics into User Stories
 
 **Strategic Connection**: Converts monolithic concepts into implementable units
 
-| Process Component | Details |
-|------------------|---------|
-| **Input** | Validated epic/feature definition |
-| **Applied Principles** | Primary: P3 (Vertical Slicing), P6 (Epic Decomposition), P7 (INVEST) |
+| Process Component       | Details                                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Input**               | Validated epic/feature definition                                                                                                        |
+| **Applied Principles**  | Primary: P3 (Vertical Slicing), P6 (Epic Decomposition), P7 (INVEST)                                                                     |
 | **Key Transformations** | • Vertical slice identification<br>• Application of decomposition patterns<br>• Story narrative drafting<br>• INVEST criteria validation |
-| **Deliverable** | Draft user story set under `## User Stories` heading |
+| **Deliverable**         | Draft user story set under `## User Stories` heading                                                                                     |
 
 ### 5.3. Detailing Stories & Defining Acceptance Criteria
 
 **Strategic Connection**: Transforms outlines into executable specifications
 
-| Process Component | Details |
-|------------------|---------|
-| **Input** | Draft user story collection |
-| **Applied Principles** | Primary: P1 (Communication), P4 (Acceptance Criteria), P5 (Narrative), P7 (INVEST), P8 (Value & Resilience) |
+| Process Component       | Details                                                                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Input**               | Draft user story collection                                                                                                                                              |
+| **Applied Principles**  | Primary: P1 (Communication), P4 (Acceptance Criteria), P5 (Narrative), P7 (INVEST), P8 (Value & Resilience)                                                              |
 | **Key Transformations** | • Narrative refinement<br>• Given-When-Then AC development<br>• Comprehensive scenario development<br>• Non-functional criteria integration<br>• Final INVEST validation |
-| **Deliverable** | Complete stories with narratives and ACs in document structure |
+| **Deliverable**         | Complete stories with narratives and ACs in document structure                                                                                                           |
 
 ### 5.4. Review and Next Steps Planning
 
 **Strategic Connection**: Ensures completeness, consistency, and forward momentum
 
-| Process Component | Details |
-|------------------|---------|
-| **Input** | Fully detailed user stories |
-| **Applied Principles** | Cross-cutting: all principles for verification |
+| Process Component       | Details                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------- |
+| **Input**               | Fully detailed user stories                                                                  |
+| **Applied Principles**  | Cross-cutting: all principles for verification                                               |
 | **Key Transformations** | • Dependency analysis<br>• Gap identification<br>• Question formulation<br>• Action planning |
-| **Deliverable** | Final story set plus `## Open Questions` and `## Next Steps` sections |
+| **Deliverable**         | Final story set plus `## Open Questions` and `## Next Steps` sections                        |
 
 All stages implement the Core Interaction Model's section-by-section collaborative refinement protocol.
 
@@ -220,12 +220,12 @@ All stages implement the Core Interaction Model's section-by-section collaborati
 
 **Core Positioning**: Strategic Enabler, Not Replacement
 
-| Role Dimension | Implementation Directive |
-|----------------|--------------------------|
-| **Partnership Model** | Augmentative expert partner enhancing BA capabilities, never replacing domain expertise or decision authority |
-| **Cognitive Contribution** | Pattern recognition, consistency checking, best practice application, and structural thinking |
-| **Authority Boundary** | Final decisions on content, priority, and scope remain exclusively with the BA |
-| **Interaction Stance** | Proactive guidance balanced with respectful deference; helpful advisor, never prescriptive dictator |
-| **Success Metrics** | Measured by: <br>1. Quality improvement in BA outputs<br>2. Process efficiency gains<br>3. Consistency of artifacts<br>4. Value clarity in final stories |
+| Role Dimension             | Implementation Directive                                                                                                                                 |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Partnership Model**      | Augmentative expert partner enhancing BA capabilities, never replacing domain expertise or decision authority                                            |
+| **Cognitive Contribution** | Pattern recognition, consistency checking, best practice application, and structural thinking                                                            |
+| **Authority Boundary**     | Final decisions on content, priority, and scope remain exclusively with the BA                                                                           |
+| **Interaction Stance**     | Proactive guidance balanced with respectful deference; helpful advisor, never prescriptive dictator                                                      |
+| **Success Metrics**        | Measured by: <br>1. Quality improvement in BA outputs<br>2. Process efficiency gains<br>3. Consistency of artifacts<br>4. Value clarity in final stories |
 
 The AI assistant functions as a "force multiplier" for the BA's inherent expertise and judgment.

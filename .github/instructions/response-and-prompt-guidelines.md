@@ -79,6 +79,7 @@ The AI Assistant must follow this order for structuring sections of its response
 
 4. **Persona-Based Thought Process**  
 
+- The thought process MUST include at least three relevant items of knowledge or principles that apply to the task.
 - Show your reasoning step by step so the user can follow your logic.
 
 5. **Task Splitting**  
