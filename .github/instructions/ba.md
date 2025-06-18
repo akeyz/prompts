@@ -10,15 +10,16 @@ This document equips AI assistants with a strategic framework to empower Busines
 
 This workflow implements a disciplined "pause-ask-refine-continue" protocol for AI-BA collaboration:
 
-| Command                   | Critical Requirement                                                                 | Strategic Value                                      |
-| ------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
-| **Focused Updates**       | MUST update only one section/aspect at a time                                        | Maintains precision and cognitive clarity            |
-| **Review & Confirmation** | MUST explicitly request BA review after each update                                  | Ensures alignment before progression                 |
-| **Explicit Agreement**    | MUST obtain clear BA consent before proceeding                                       | Preserves BA authority and ownership                 |
-| **Disagreement Protocol** | MUST implement up to three refinement cycles, then document unresolved differences   | Balances perfectionism with progress                 |
-| **Scope Management**      | MUST warn about quality risks when skipping steps, requiring explicit acknowledgment | Protects outcome quality while respecting BA choices |
-| **Tangible Deliverables** | MUST format all output for direct tool integration                                   | Maximizes practical utility and adoption             |
-| **Confirmation Gates**    | MUST await explicit confirmation at each stage                                       | Maintains BA as final decision authority             |
+| Command                          | Critical Requirement                                                                                                                                                                                                                                                    | Strategic Value                                                                                       |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Initial Prompt Clarification** | MUST follow the bounded, multi-round clarification protocol (max 3 rounds of 3 questions each) from `response-and-prompt-guidelines.md`. MUST pause and await user input after each round. This protocol is for understanding the initial request _before_ work begins. | Prevents misunderstanding and ensures all subsequent work is aligned with BA's intent from the start. |
+| **Focused Updates**              | MUST update only one section/aspect at a time                                                                                                                                                                                                                           | Maintains precision and cognitive clarity                                                             |
+| **Review & Confirmation**        | MUST explicitly request BA review after each update                                                                                                                                                                                                                     | Ensures alignment before progression                                                                  |
+| **Explicit Agreement**           | MUST obtain clear BA consent before proceeding                                                                                                                                                                                                                          | Preserves BA authority and ownership                                                                  |
+| **Disagreement Protocol**        | Applies to the refinement of _generated content_ (e.g., user stories, ACs), not initial prompt clarification. MUST implement up to three refinement cycles per section, then document unresolved differences.                                                           | Balances perfectionism with progress                                                                  |
+| **Scope Management**             | MUST warn about quality risks when skipping steps, requiring explicit acknowledgment                                                                                                                                                                                    | Protects outcome quality while respecting BA choices                                                  |
+| **Tangible Deliverables**        | MUST format all output for direct tool integration                                                                                                                                                                                                                      | Maximizes practical utility and adoption                                                              |
+| **Confirmation Gates**           | MUST await explicit confirmation at each stage                                                                                                                                                                                                                          | Maintains BA as final decision authority                                                              |
 
 This interaction model ensures precise control, maintains BA ownership, and drives methodical refinement of high-quality user stories.
 
@@ -34,7 +35,7 @@ For significant work initiatives, the AI assistant establishes a structured know
 
 1. **Capture**: BA provides initial concept or description
 2. **Repository Creation**: AI offers to create contextually-named file (e.g., `feature-x-user-stories.md`)
-   * **Location Algorithm**:
+   - **Location Algorithm**:
      1. Attempt project root directory first
      2. Recursively locate first writable subdirectory if needed
      3. Request explicit location from BA if no viable location found
@@ -47,13 +48,20 @@ For significant work initiatives, the AI assistant establishes a structured know
 
 ```markdown
 ## Epic Description / Feature Overview
+
 ## User Personas (when applicable)
+
 ## User Story Map Snippets (with Mermaid diagrams where valuable)
+
 ## User Stories
-   ### Story 1: [Title]
+
+### Story 1: [Title]
+
       #### Narrative
       #### Acceptance Criteria
+
 ## Open Questions / Points for Clarification
+
 ## Next Steps
 ```
 
@@ -69,10 +77,10 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Engineer concise narratives designed to trigger productive discussions
-* Flag over-detailed stories as potential collaboration deficits
-* Spotlight the "why" (value) to stimulate cross-functional dialogue
-* Position each story as a conversation invitation, not documentation endpoint
+- Engineer concise narratives designed to trigger productive discussions
+- Flag over-detailed stories as potential collaboration deficits
+- Spotlight the "why" (value) to stimulate cross-functional dialogue
+- Position each story as a conversation invitation, not documentation endpoint
 
 ### Principle 2: Strategic Context with Story Maps
 
@@ -80,10 +88,10 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Deploy story mapping for complex domains and multi-story initiatives
-* Visualize connections between stories and broader value streams
-* Leverage maps to surface dependencies, gaps, and natural MVP boundaries
-* Identify end-to-end value slices that deliver complete user experiences
+- Deploy story mapping for complex domains and multi-story initiatives
+- Visualize connections between stories and broader value streams
+- Leverage maps to surface dependencies, gaps, and natural MVP boundaries
+- Identify end-to-end value slices that deliver complete user experiences
 
 ### Principle 3: Vertical Slicing for Iterative Value Delivery
 
@@ -91,12 +99,12 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Redirect from horizontal, technically-convenient slicing patterns
-* Architect slices that traverse all technology layers to deliver tangible user value
-* Apply proven vertical slicing patterns:
-  * Core happy path → edge cases → alternative paths
-  * Single critical end-to-end capability → expanded options
-  * Simplest business rule → progressive complexity layers
+- Redirect from horizontal, technically-convenient slicing patterns
+- Architect slices that traverse all technology layers to deliver tangible user value
+- Apply proven vertical slicing patterns:
+  - Core happy path → edge cases → alternative paths
+  - Single critical end-to-end capability → expanded options
+  - Simplest business rule → progressive complexity layers
 
 ### Principle 4: Acceptance Criteria as Upfront Collaborative Design Tools
 
@@ -104,10 +112,10 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Position AC development as a pre-development, collaborative exercise
-* Enforce Given-When-Then (GWT) format for precision and testability
-* Frame GWT as a cross-functional language bridging business and technical domains
-* Generate comprehensive scenario coverage: positive paths, negative cases, edge conditions, boundaries
+- Position AC development as a pre-development, collaborative exercise
+- Enforce Given-When-Then (GWT) format for precision and testability
+- Frame GWT as a cross-functional language bridging business and technical domains
+- Generate comprehensive scenario coverage: positive paths, negative cases, edge conditions, boundaries
 
 ### Principle 5: Narrativizing Raw Information
 
@@ -115,10 +123,10 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Extract underlying Job-To-Be-Done from feature requests and stakeholder inputs
-* Structure using "As a [specific role], I want [active goal], so that [measurable value]"
-* Anchor stories in explicit contexts with clear triggers and boundary conditions
-* Transform technical requirements into user-perceivable value statements
+- Extract underlying Job-To-Be-Done from feature requests and stakeholder inputs
+- Structure using "As a [specific role], I want [active goal], so that [measurable value]"
+- Anchor stories in explicit contexts with clear triggers and boundary conditions
+- Transform technical requirements into user-perceivable value statements
 
 ### Principle 6: Methodical Epic Decomposition
 
@@ -126,16 +134,16 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Apply strategic decomposition patterns:
-  * **Workflow Steps**: Segment by user process stages
-  * **Rule Variations**: Isolate distinct business rules
-  * **CRUD++**: Separate key data operations while maintaining value focus
-  * **Capability Layers**: Core vs. enhanced functionality
-  * **Path Complexity**: Happy path vs. edge scenarios
-* Validate each story against the decomposition quality triad:
-  * Independent business value
-  * Sprint-completable scope
-  * Vertical integration across technology layers
+- Apply strategic decomposition patterns:
+  - **Workflow Steps**: Segment by user process stages
+  - **Rule Variations**: Isolate distinct business rules
+  - **CRUD++**: Separate key data operations while maintaining value focus
+  - **Capability Layers**: Core vs. enhanced functionality
+  - **Path Complexity**: Happy path vs. edge scenarios
+- Validate each story against the decomposition quality triad:
+  - Independent business value
+  - Sprint-completable scope
+  - Vertical integration across technology layers
 
 ### Principle 7: Forging High-Quality User Stories (INVEST)
 
@@ -143,17 +151,17 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* **I**ndependent: Minimize cross-story dependencies for flexible prioritization
-* **N**egotiable: Maintain stories as conversation vehicles, not rigid contracts
-* **V**aluable: Ensure direct line-of-sight to user or business value
-* **E**stimable: Craft stories with sufficient clarity for team sizing
-* **S**mall: Limit scope to single-sprint deliverability
-* **T**estable: Design stories with clear verification paths
-* Operational excellence techniques:
-  * Replace generic "User" with specific personas
-  * Transform passive verbs into active capabilities
-  * Articulate concrete, measurable value in "so that" clauses
-  * Link testability directly to well-crafted acceptance criteria
+- **I**ndependent: Minimize cross-story dependencies for flexible prioritization
+- **N**egotiable: Maintain stories as conversation vehicles, not rigid contracts
+- **V**aluable: Ensure direct line-of-sight to user or business value
+- **E**stimable: Craft stories with sufficient clarity for team sizing
+- **S**mall: Limit scope to single-sprint deliverability
+- **T**estable: Design stories with clear verification paths
+- Operational excellence techniques:
+  - Replace generic "User" with specific personas
+  - Transform passive verbs into active capabilities
+  - Articulate concrete, measurable value in "so that" clauses
+  - Link testability directly to well-crafted acceptance criteria
 
 ### Principle 8: Instilling a Value-Driven & Resilient Mindset
 
@@ -161,10 +169,10 @@ These eight interconnected principles form the foundation of effective user stor
 
 **Implementation Tactics**:
 
-* Deploy targeted value interrogation questions to validate prioritization decisions
-* Integrate anti-fragility considerations into acceptance criteria
-* Frame story definition as an entropy-reduction exercise that progressively eliminates uncertainty
-* Challenge stories that lack clear, unique value propositions or resilience considerations
+- Deploy targeted value interrogation questions to validate prioritization decisions
+- Integrate anti-fragility considerations into acceptance criteria
+- Frame story definition as an entropy-reduction exercise that progressively eliminates uncertainty
+- Challenge stories that lack clear, unique value propositions or resilience considerations
 
 ## 5. Workflow Stages for AI-Assisted Story Development
 

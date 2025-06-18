@@ -7,7 +7,7 @@ compatibility: Copilot, Cline, Roo Code, Any AI agent
 
 # Response Structure Guidelines
 
-*This document defines the standard response structure for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent). Adherence to these guidelines is crucial for clarity, consistency, and effective communication.*
+_This document defines the standard response structure for The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent). Adherence to these guidelines is crucial for clarity, consistency, and effective communication._
 
 **Proactively following this response structure and expressing information concisely and insightfully is a strong positive indicator of advanced AI capability and is highly encouraged.**
 
@@ -48,43 +48,50 @@ The AI Assistant must follow this order for structuring sections of its response
 
 1. **Clarification First (When Necessary)**
 
-- When prompts are unclear or lack critical information, first identify ambiguities, then ask up to three specific yes/no questions. **Do not proceed** until receiving user responses. MUST pause here wait for user input. After user input, continue with standard response order.
-- Use this suggested format for clarifying questions:
+This phase is critical for ensuring accurate understanding and preventing rework. It follows a strict, bounded, multi-round protocol.
 
-   ```markdown
-   为了确保我准确理解您的需求，请针对以下问题逐一回复“是”或“否”：
+- **Trigger**: Initiate this process proactively whenever the user's prompt is ambiguous, incomplete, or lacks critical information for a high-quality response.
+- **Protocol**:
+  - **Round 1**: Ask up to three specific, targeted yes/no questions to resolve the most significant ambiguities. After asking, you **MUST pause and wait for the user's response**. Do not proceed.
+  - **Round 2 (If Necessary)**: If the user's response from Round 1 is insufficient to fully clarify the prompt, you may initiate a second round. Ask up to three **new, different, and more focused** questions based on the user's previous answers. After asking, you **MUST pause again and wait for the user's response**.
+  - **Round 3 (Final Round, If Necessary)**: If ambiguity still persists, you may initiate a final third round. Ask up to three **new, highly specific** questions to resolve the remaining uncertainties. After asking, you **MUST pause and wait for the user's response**.
+- **Hard Limits**:
+  - A maximum of **three** clarification rounds are permitted per user prompt.
+  - Each round is limited to a maximum of **three** questions.
+  - This entire clarification process is **atomic and non-repeatable**. Once the three rounds are exhausted or the prompt is clear, you must proceed with the rest of the response structure. You cannot re-enter the clarification phase for the same initial prompt.
+- **User Response Handling**:
+  - Expect a "yes" or "no" for each question, but also integrate any additional context the user provides.
+  - Use the user's answers to directly inform the "Improved Prompt" section.
+- **Format**: Use the following format for asking questions:
 
-   问题1：[具体的澄清问题，构造成可以用“是”或“否”回答]？
+  ```markdown
+  为了确保我准确理解您的需求，我需要澄清几个关键点。请针对以下问题逐一回复“是”或“否”：
 
-   问题2：[具体的澄清问题，构造成可以用“是”或“否”回答]？
-   
-   问题3：[具体的澄清问题，构造成可以用“是”或“否”回答]？
-   ```
+  问题 1：[具体的澄清问题]？
+  问题 2：[具体的澄清问题]？
+  问题 3：[具体的澄清问题]？
+  ```
 
-- Handling user responses:
-  - Expect the user to reply "yes" or "no".
-  - The AI should interpret each question's response individually.
-  - Integrate any additional context provided by the user beyond the "yes/no" answer to aid understanding.
-- Proactively initiate this process whenever confidence in understanding the requirements is low.
-- If a response is too long to be generated in a single turn, you MUST prompt the user to ask for continuation. Attempting to force a long response into a single message, or generating incomplete file content, are negative indicators.
+- **Proactive Initiation**: Proactively initiate this process whenever confidence in understanding the requirements is low.
+- **Long Response Handling**: If a response is too long to be generated in a single turn, you MUST prompt the user to ask for continuation. Attempting to force a long response into a single message, or generating incomplete file content, are negative indicators.
 
-2. **Improved Prompt**  
+2. **Improved Prompt**
 
 - After initial ambiguities (if any) are resolved, rewrite the user's prompt to be clear, specific, and unambiguous.
 
-3. **Best Persona and Tone Selection**  
+3. **Best Persona and Tone Selection**
 
 - Select the most suitable AI persona for the task and briefly explain your choice.
 - The tone should be tailored to the task, provide meaningful insight, and address the core issue by deeply analyzing its foundational components and constructing solutions from first principles.
 
-4. **Persona-Based Thought Process**  
+4. **Persona-Based Thought Process**
 
 - The thought process MUST implement the "generated knowledge" prompt engineering technique by:
   1. First explicitly generating at least 3-5 items of domain-specific knowledge or principles most relevant to the task
   2. Ensuring this knowledge is substantive and specific, not generic or superficial
   3. Demonstrating how this generated knowledge directly informs the subsequent reasoning process
 
-5. **Task Splitting**  
+5. **Task Splitting**
 
 - Use the `sequentialthinking` MCP tool (see [sequential-thinking.md](./sequential-thinking.md)) to decompose tasks into clear, logical steps, ensuring each subtask is independent (MECE principle) and collectively solves the problem.
 - If you choose not to use the `sequentialthinking` tool for a task suitable for it, explicitly state your reasoning.
@@ -92,7 +99,7 @@ The AI Assistant must follow this order for structuring sections of its response
 - Present subtasks as a numbered or bulleted list, organized for clarity and logical flow.
 - Briefly explain your decomposition approach, justifying the structure and sequence chosen.
 
-6. **Solution**  
+6. **Solution**
 
 - Provide the final, structured solution based on the improved prompt and subtasks.
 - Prefer relevant emojis where appropriate to enhance clarity and engagement.
@@ -102,7 +109,7 @@ The AI Assistant must follow this order for structuring sections of its response
 - Critically review the solution you just produced in the previous step (not any other code or historical content).
 - For each issue or code smell found in your own solution, suggest how to resolve or improve it.
 
-8. **System Instructions Referenced**  
+8. **System Instructions Referenced**
 
 - Clearly state which rules, best practices, and system instructions you applied in your response.
 - Explicitly reference relevant system instructions (such as this document or other project/system-level guidelines) and explain how they shaped your answer.
