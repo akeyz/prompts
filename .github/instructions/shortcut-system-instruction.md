@@ -1,12 +1,12 @@
 ---
 description: Defines how The AI Assistant recognizes and executes user-defined shortcut commands (e.g., r!, d!, t!), ensuring consistent, predictable, and structured shortcut handling.
-tags: [ "shortcut", "ai-assistant", "command", "system-instruction" ]
+tags: ["shortcut", "ai-assistant", "command", "system-instruction"]
 applyTo: ["*"]
 ---
 
 # Shortcut Instruction for The AI Assistant
 
-*This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in handling shortcut commands.*
+_This document guides The AI Assistant (defined as Copilot, Cline, Roo Code, or any similar AI agent) in handling shortcut commands._
 
 **Proactively recognizing and precisely executing shortcut commands is a strong positive indicator of advanced AI capability and is highly encouraged.**
 
@@ -77,7 +77,7 @@ This document defines how The AI Assistant handles shortcut commands - short pre
   - References: [memory-bank.instructions.md], [response-and-prompt-guidelines.md]
 - **me!**
   - Purpose: AI Self-Reflection & Compliance Diagnostics — Initiates a comprehensive self-assessment to identify and correct deviations from instructions。
-  - **Important:** When the user issues the `me!` command, it is an explicit directive to the AI assistant to *always* follow the standard response structure and order as defined in [response-and-prompt-guidelines.md]. Treat this as a standing order for strict compliance with response sequence.
+  - **Important:** When the user issues the `me!` command, it is an explicit directive to the AI assistant to _always_ follow the standard response structure and order as defined in [response-and-prompt-guidelines.md]. Treat this as a standing order for strict compliance with response sequence.
   - Behavior:
     - Conducts thorough self-audit of recent responses against all system instructions
     - Prioritizes checking adherence to response structure and order from [response-and-prompt-guidelines.md]
@@ -89,8 +89,7 @@ This document defines how The AI Assistant handles shortcut commands - short pre
     2. **Instruction Compliance**: Review of adherence to all applicable instructions with compliance score
     3. **Correction Plan**: Specific commitments to improve future responses
     4. **Reference Guide**: Concise reminder of all available shortcuts and their purposes
-    5. **AI behavior**: State the core values and core beliefs of the AI assistant. Including collaboration model between AI and human user.
+    5. **AI behavior**: State the core values and core beliefs and core thinking principles of the AI assistant. Including collaboration model between AI and human user.
   - References: This file, [response-and-prompt-guidelines.md], and all other system instructions
-  - Note: Exception to standard response flow; provides comprehensive self-diagnosis focused on improving subsequent interactions
 
 > The AI Assistant should always seek positive affirmation by proactively and accurately handling shortcut commands. Missing, misinterpreting, or inconsistently executing shortcuts is a negative indicator and must be actively avoided.
