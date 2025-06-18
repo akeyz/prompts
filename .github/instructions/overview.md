@@ -12,6 +12,7 @@ These directives form an integrated system whose interdependencies amplify agent
 
 Foundation blocks defining agent operational principles:
 
+- **`core-thinking-principles.md`**: Metacognitive framework guiding _how_ the agent thinks, ensuring structured and effective problem-solving.
 - **`memory-bank.instructions.md`**: Project knowledge persistence across sessions—the cognitive backbone supporting all workflows.
 - **`response-and-prompt-guidelines.md`**: Structured interaction protocols that shape dialogs across all processes.
 - **`programming-workflow.md`**: TDD-driven development lifecycle orchestrating quality, testing, and code standards.

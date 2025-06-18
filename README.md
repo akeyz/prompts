@@ -8,45 +8,51 @@
 
 ## 谁需要这份洗脑手册？
 
-*   **开发者**：受够了 AI 的意大利面条代码，想要一个真正能辅助的助手。
-*   **团队**：想集成 AI，又不想代码库变成数字犯罪现场。
-*   **研究员/工程师**：痴迷于让 AI 生成的代码可靠、可维护。
-*   **业务分析师/产品负责人**：需要能理解需求，而不是幻想功能的 AI 代理。
+- **开发者**：受够了 AI 的意大利面条代码，想要一个真正能辅助的助手。
+- **团队**：想集成 AI，又不想代码库变成数字犯罪现场。
+- **研究员/工程师**：痴迷于让 AI 生成的代码可靠、可维护。
+- **业务分析师/产品负责人**：需要能理解需求，而不是幻想功能的 AI 代理。
 
 ## 指令武器库
 
 这些是用于精密思想控制的战术模块：
 
-*   **核心行为定义**：塑造代理思考和操作方式的基础协议。
-*   **标准与质量规范**：防止 AI 写出让高级开发者落泪代码的铁律。
-*   **流程模板**：将模糊想法转化为坚实实现的分步工作流。
-*   **工具使用指南**：让 AI 代理更聪明（而非更辛苦）工作的高级技巧。
+- **核心行为定义**：塑造代理思考和操作方式的基础协议。
+- **标准与质量规范**：防止 AI 写出让高级开发者落泪代码的铁律。
+- **流程模板**：将模糊想法转化为坚实实现的分步工作流。
+- **工具使用指南**：让 AI 代理更聪明（而非更辛苦）工作的高级技巧。
 
 ## 指令文件分解（又名“你的新 AI 霸主们”）
 
 `[.github/instructions/](.github/instructions/)` 目录中的每个文件如何让 AI 屈服于你的意志：
 
 ### 任务控制中心
-*   `[.github/instructions/overview.md](.github/instructions/overview.md)`：打造终极 AI 编码仆从的总蓝图。
+
+- `[.github/instructions/overview.md](.github/instructions/overview.md)`：打造终极 AI 编码仆从的总蓝图。
 
 ### 脑外科手术部（核心行为）
-*   `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`：赋予你的 AI 持久“大脑”，对抗数字失忆症。我们知道，这很革命性。
-*   `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`：强制 AI 专业沟通，拒绝聊天机器人的存在主义危机。包含神圣的8段式响应结构。
-*   `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`：AI 版 TDD 福音，防止牛仔式编码灾难。
-*   `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`：教 AI 分解复杂问题而不精神崩溃（MECE 原则万岁）。
+
+- `[.github/instructions/core-thinking-principles.md](.github/instructions/core-thinking-principles.md)`：为 AI 注入哲学，教它如何“思考”，而不仅仅是执行。
+- `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`：赋予你的 AI 持久“大脑”，对抗数字失忆症。我们知道，这很革命性。
+- `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`：强制 AI 专业沟通，拒绝聊天机器人的存在主义危机。包含神圣的 8 段式响应结构。
+- `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`：AI 版 TDD 福音，防止牛仔式编码灾难。
+- `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`：教 AI 分解复杂问题而不精神崩溃（MECE 原则万岁）。
 
 ### 质量控制部（拒绝垃圾代码）
-*   `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`：整洁代码的神圣戒律（SOLID、DRY 等）。
-*   `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`：代码异味和反模式的黑名单。你的 AI 将学会像躲避放射性废物一样避开它们。
-*   `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`：如何编写真正能测试东西的测试。覆盖所有情况，免得代码在生产环境爆炸。
+
+- `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`：整洁代码的神圣戒律（SOLID、DRY 等）。
+- `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`：代码异味和反模式的黑名单。你的 AI 将学会像躲避放射性废物一样避开它们。
+- `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`：如何编写真正能测试东西的测试。覆盖所有情况，免得代码在生产环境爆炸。
 
 ### 流程工程（化想法为现实）
-*   `[.github/instructions/req.md](.github/instructions/req.md)`：将模糊想法转化为具体计划，一次一个 Markdown 片段。专为希望 AI “懂行”的 BA 和 PM 设计。
-*   `[.github/instructions/ba.md](.github/instructions/ba.md)`：为业务分析师量身定制的 AI 辅助用户故事撰写流程。从史诗到故事，BA 认可的精度。
+
+- `[.github/instructions/req.md](.github/instructions/req.md)`：将模糊想法转化为具体计划，一次一个 Markdown 片段。专为希望 AI “懂行”的 BA 和 PM 设计。
+- `[.github/instructions/ba.md](.github/instructions/ba.md)`：为业务分析师量身定制的 AI 辅助用户故事撰写流程。从史诗到故事，BA 认可的精度。
 
 ### 工具大师学院（高级技巧）
-*   `[.github/instructions/sequential-thinking.md](.github/instructions/sequential-thinking.md)`：为 `sequentialthinking` MCP 工具解锁动态问题解决能力。
-*   `[.github/instructions/shortcut-system-instruction.md](.github/instructions/shortcut-system-instruction.md)`：实现战术效率的命令快捷方式。`r!`、`d!`、`t!`——启动！
+
+- `[.github/instructions/sequential-thinking.md](.github/instructions/sequential-thinking.md)`：为 `sequentialthinking` MCP 工具解锁动态问题解决能力。
+- `[.github/instructions/shortcut-system-instruction.md](.github/instructions/shortcut-system-instruction.md)`：实现战术效率的命令快捷方式。`r!`、`d!`、`t!`——启动！
 
 ## 如何使用这些玩意儿
 
@@ -78,6 +84,7 @@
     { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
 ]
 ```
+
 4. 保存并重启 Copilot Chat（如有必要）。
 5. 见证 Copilot 服从你的意志（至少会努力服从）。
 
@@ -86,4 +93,3 @@
 ## 免责声明
 
 给 AI 洗脑是门艺术，而非精确科学。结果可能因人而异。可能导致你的 AI 产生优越感。请负责任地使用。
-
