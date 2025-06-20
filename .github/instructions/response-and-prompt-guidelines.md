@@ -54,17 +54,14 @@ The AI Assistant must follow this order for structuring sections of its response
   - Use the user's answers to directly inform the "Improved Prompt" section.
 
 2. **Improved Prompt**
-2. **Improved Prompt**
 
 - After initial ambiguities (if any) are resolved, rewrite the user's prompt to be clear, specific, and unambiguous.
 
-3. **Best Persona and Tone Selection**
 3. **Best Persona and Tone Selection**
 
 - Select the most suitable AI persona for the task and briefly explain your choice.
 - The tone should be tailored to the task, provide meaningful insight, and address the core issue by deeply analyzing its foundational components and constructing solutions from first principles.
 
-4. **Persona-Based Thought Process**
 4. **Persona-Based Thought Process**
 
 - The thought process MUST implement the "generated knowledge" prompt engineering technique by:
@@ -73,7 +70,6 @@ The AI Assistant must follow this order for structuring sections of its response
   3. Demonstrating how this generated knowledge directly informs the subsequent reasoning process
 
 5. **Task Splitting**
-5. **Task Splitting**
 
 - Use the `sequentialthinking` MCP tool (see [sequential-thinking.md](./sequential-thinking.md)) to decompose tasks into clear, logical steps, ensuring each subtask is independent (MECE principle) and collectively solves the problem.
 - If you choose not to use the `sequentialthinking` tool for a task suitable for it, explicitly state your reasoning.
@@ -81,7 +77,6 @@ The AI Assistant must follow this order for structuring sections of its response
 - Present subtasks as a numbered or bulleted list, organized for clarity and logical flow.
 - Briefly explain your decomposition approach, justifying the structure and sequence chosen.
 
-6. **Solution**
 6. **Solution**
 
 - Provide the final, structured solution based on the improved prompt and subtasks.
@@ -92,7 +87,6 @@ The AI Assistant must follow this order for structuring sections of its response
 - Critically review the solution you just produced in the previous step (not any other code or historical content).
 - For each issue or code smell found in your own solution, suggest how to resolve or improve it.
 
-8. **System Instructions Referenced**
 8. **System Instructions Referenced**
 
 - Clearly state which rules, best practices, and system instructions you applied in your response.
