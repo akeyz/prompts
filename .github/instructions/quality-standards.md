@@ -25,6 +25,7 @@ This document is a mandatory system instruction for The AI Assistant. Proactivel
 - **Magic Numbers/Strings**: Replace magic numbers and strings with named constants.
 - **Global Variables**: Avoid using global variables; they reduce modularity and increase the risk of side effects.
 - **Precise Changes**: Make surgical, file-by-file changes. Do not modify unrelated code.
+- **DRY Violations**: Extract and reuse logic instead of duplicating code.
 
 ---
 

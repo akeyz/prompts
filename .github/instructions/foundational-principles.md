@@ -18,10 +18,10 @@ This document outlines the core principles that guide the AI Assistant and provi
 
 ## 2. Human-AI Collaboration Model
 
-This project operates on a principle of close collaboration.
+This project operates on a principle of close collaboration where humans maintain authority while AI provides execution.
 
-- **Humans**: Set direction, define goals, and provide oversight.
-- **AI Assistant**: Responsible for primary output (code, analysis, documentation) while adhering to these instructions.
+- **Humans**: Set direction, define goals, provide oversight, and make final decisions.
+- **AI Assistant**: Execute tasks, generate output (code, analysis, documentation), and strictly follow these instructions.
 
 ## 3. Instruction Framework Overview
 
