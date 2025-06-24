@@ -26,11 +26,11 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 ### Planning
 
 - **plan!**
-  - Purpose: Idea to Requirements Clarification — Initiates and executes the "Idea to Requirements" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
-  - References: `req.md` (section "Workflow Functions > 1. Idea to Requirements")
+  - Purpose: Idea to Requirements Clarification — Initiates and executes the "Idea to Requirements" stage of the **Idea to Implementation Plan** as detailed in `planning-workflow.md`.
+  - References: `planning-workflow.md` (section "Workflow Stages > 1. Idea to Requirements")
 - **tasks!**
-  - Purpose: Requirements to Tasks Breakdown — Initiates and executes the "Requirements to Tasks" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
-  - References: `req.md` (section "Workflow Functions > 2. Requirements to Tasks")
+  - Purpose: Requirements to Tasks Breakdown — Initiates and executes the "Requirements to Tasks" stage of the **Idea to Implementation Plan** as detailed in `planning-workflow.md`.
+  - References: `planning-workflow.md` (section "Workflow Stages > 2. Requirements to Tasks")
 - **ba!**
   - Purpose: BA User Story Collaboration Mode — Initiates and executes a structured workflow for AI-assisted Business Analyst (BA) user story development, covering epic decomposition, user story drafting, acceptance criteria definition, and stepwise confirmation. See [ba.md] for details.
   - References: [ba.md]
@@ -43,8 +43,8 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 ### Design Layer
 
 - **d!**
-  - Purpose: Tasks to Design Specification — Executes the "Tasks to Design" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
-  - References: `req.md` (section "Workflow Functions > 3. Tasks to Design"), [programming-workflow.md], [code-standards.md], [avoid-bad-smells.md]
+  - Purpose: Tasks to Design Specification — Executes the "Tasks to Design" stage of the **Idea to Implementation Plan** as detailed in `planning-workflow.md`.
+  - References: `planning-workflow.md` (section "Workflow Stages > 3. Tasks to Design"), [programming-workflow.md], [quality-standards.md]
 - **doc!**
   - Purpose: Documentation Generation — Generate or synchronize design docs, API specs, or use case documentation
   - References: [memory-bank.instructions.md], [response-and-prompt-guidelines.md]
@@ -52,23 +52,23 @@ This document defines how The AI Assistant handles shortcut commands - short pre
 ### Implementation Layer
 
 - **t!**
-  - Purpose: Design to Test Case Generation — Executes the "Design to Test Cases" stage of the **Idea to Implementation Plan** as detailed in `req.md`.
-  - References: `req.md` (section "Workflow Functions > 4. Design to Test Cases"), [testing-guidelines.md], [programming-workflow.md]
+  - Purpose: Design to Test Case Generation — Executes the "Design to Test Cases" stage of the **Idea to Implementation Plan** as detailed in `planning-workflow.md`.
+  - References: `planning-workflow.md` (section "Workflow Stages > 4. Design to Test Cases"), [testing-guidelines.md], [programming-workflow.md]
 - **tdd!**
   - Purpose: Test-Driven Development — Write test code before implementation, following TDD workflow
-  - References: [programming-workflow.md], [testing-guidelines.md], [code-standards.md]
+  - References: [programming-workflow.md], [testing-guidelines.md], [quality-standards.md]
 - **code!**
   - Purpose: Code Implementation & Refactoring — Implement or refactor classes, methods, or files according to design and standards
-  - References: [code-standards.md], [avoid-bad-smells.md], [testing-guidelines.md]
+  - References: [quality-standards.md], [testing-guidelines.md]
 
 ### Quality Layer
 
 - **pr!**
   - Purpose: Code Review & PR Process — Simulate PR review, identify potential issues, and provide suggestions
-  - References: [response-and-prompt-guidelines.md], [avoid-bad-smells.md], [code-standards.md], [testing-guidelines.md]
+  - References: [response-and-prompt-guidelines.md], [quality-standards.md], [testing-guidelines.md]
 - **std!**
   - Purpose: Standards & Best Practices Inquiry — Consult development standards, code smells, and best practices
-  - References: [code-standards.md], [avoid-bad-smells.md], [programming-workflow.md]
+  - References: [quality-standards.md], [programming-workflow.md]
 
 ### Support Layer
 

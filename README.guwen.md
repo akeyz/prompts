@@ -28,25 +28,24 @@
 
 ### 总纲领
 
-- `[.github/instructions/overview.md](.github/instructions/overview.md)`：此乃全局之策，统御诸法，以成 AI 调教之大业。
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`：此乃全局之策，统御诸法，以成 AI 调教之大业。
 
 ### 炼心篇（核心行为）
 
-- `[.github/instructions/core-thinking-principles.md](.github/instructions/core-thinking-principles.md)`：授其“心法”，明其“思路”，使其知其然，亦知其所以然。
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`：授其“心法”，明其“思路”，使其知其然，亦知其所以然。
 - `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`：建 AI 之“藏经阁”，使其不昧前尘，温故知新。可谓革故鼎新之举。
 - `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`：正其言，使其沟通有度，如君子之风，远避繁冗。内含八股文章之精义。
 - `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`：AI 之“格物、致知、诚意、正心、修身”流程，防微杜渐，免蹈覆辙。
-- `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`：授 AI 以“庖丁解牛”之技，化繁为简，从容不迫（MECE 心法）。
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`：授 AI 以“庖丁解牛”之技，化繁为简，从容不迫（MECE 心法）。
 
 ### 品鉴篇（代码质量）
 
-- `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`：代码之“礼义廉耻”，清净庄严，如琢如磨（SOLID、DRY 诸法）。
-- `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`：代码之“病灶”与“魔障”大全。AI 当避之如蛇蝎，远三毒，净六根。
+- `[.github/instructions/quality-standards.md](.github/instructions/quality-standards.md)`：代码之“礼义廉耻”，清净庄严，如琢如磨（SOLID、DRY 诸法）。代码之"病灶"与"魔障"大全。AI 当避之如蛇蝎，远三毒，净六根。
 - `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`：演练兵法，务求实效，而非纸上谈兵。覆盖周全，方保万无一失。
 
 ### 开物篇（流程工程）
 
-- `[.github/instructions/req.md](.github/instructions/req.md)`：化虚为实，点石成金。循序引导，使 AI 洞明需求，如拨云见日。
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`：化虚为实，点石成金。循序引导，使 AI 洞明需求，如拨云见日。
 - `[.github/instructions/ba.md](.github/instructions/ba.md)`：专为“运筹者”打造，AI 辅助擘画“用户故事”，巨细靡遗，层层确认。
 
 ### 神通篇（高级技巧）
@@ -71,16 +70,15 @@
 ```jsonc
 "github.copilot.chat.codeGeneration.instructions": [
     { "text": "警之！代码勿与尘世已存之码雷同。" },
-    { "file": "../prompts/.github/instructions/req.md" },
+    { "file": "../prompts/.github/instructions/foundational-principles.md" },
+    { "file": "../prompts/.github/instructions/planning-workflow.md" },
     { "file": "../prompts/.github/instructions/ba.md" },
-    { "file": "../prompts/.github/instructions/overview.md" },
     { "file": "../prompts/.github/instructions/memory-bank.instructions.md" },
-    { "file": "../prompts/.github/instructions/code-standards.md" },
-    { "file": "../prompts/.github/instructions/workflow-and-task-splitting.md" },
+    { "file": "../prompts/.github/instructions/quality-standards.md" },
     { "file": "../prompts/.github/instructions/programming-workflow.md" },
     { "file": "../prompts/.github/instructions/response-and-prompt-guidelines.md" },
     { "file": "../prompts/.github/instructions/testing-guidelines.md" },
-    { "file": "../prompts/.github/instructions/avoid-bad-smells.md" },
+    { "file": "../prompts/.github/instructions/sequential-thinking.md" },
     { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
 ]
 ```

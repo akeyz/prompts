@@ -28,25 +28,24 @@ How each file in `[.github/instructions/](.github/instructions/)` bends AI to yo
 
 ### Mission Control Center
 
-- `[.github/instructions/overview.md](.github/instructions/overview.md)`: The master plan for the ultimate AI coding minion.
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`: The master plan for the ultimate AI coding minion.
 
 ### Brain Surgery Department (Core Behavior)
 
-- `[.github/instructions/core-thinking-principles.md](.github/instructions/core-thinking-principles.md)`: Injects philosophy into the AI, teaching it _how_ to think, not just what to do.
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`: Injects philosophy into the AI, teaching it _how_ to think, not just what to do.
 - `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`: Gives your AI a persistent "brain" to combat digital amnesia. We know, it's revolutionary.
 - `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`: Mandates professional communication, not chatbot existential crises. Features the sacred 8-section response.
 - `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`: The TDD gospel to prevent AI cowboy coding disasters.
-- `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`: Teaches AI to break down complex problems without meltdowns (MECE for the win).
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`: Teaches AI to break down complex problems without meltdowns (MECE for the win).
 
 ### Quality Control Department (No More Garbage Code)
 
-- `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`: The holy commandments of clean code (SOLID, DRY, etc.).
-- `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`: A hit-list of code smells and anti-patterns. Your AI will learn to avoid these like radioactive waste.
+- `[.github/instructions/quality-standards.md](.github/instructions/quality-standards.md)`: The holy commandments of clean code (SOLID, DRY, etc.) and a hit-list of code smells and anti-patterns. Your AI will learn to avoid these like radioactive waste.
 - `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`: How to write tests that _actually_ test things. Covers all the bases so your code doesn't explode in prod.
 
 ### Process Engineering (Ideas to Reality)
 
-- `[.github/instructions/req.md](.github/instructions/req.md)`: Turns vague ideas into concrete plans, one Markdown section at a time. For BAs and PMs who want AI to _get it_.
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`: Turns vague ideas into concrete plans, one Markdown section at a time. For BAs and PMs who want AI to _get it_.
 - `[.github/instructions/ba.md](.github/instructions/ba.md)`: Specialized user story crafting with AI for Business Analysts. Epics to stories, with BA-approved precision.
 
 ### Tool Master Academy (Advanced Techniques)
@@ -71,16 +70,15 @@ Want to brainwash Copilot directly in VS Code? Use the right structure:
 ```jsonc
 "github.copilot.chat.codeGeneration.instructions": [
     { "text": "Avoid generating code that matches public code exactly." },
-    { "file": "../prompts/.github/instructions/req.md" },
+    { "file": "../prompts/.github/instructions/foundational-principles.md" },
+    { "file": "../prompts/.github/instructions/planning-workflow.md" },
     { "file": "../prompts/.github/instructions/ba.md" },
-    { "file": "../prompts/.github/instructions/overview.md" },
     { "file": "../prompts/.github/instructions/memory-bank.instructions.md" },
-    { "file": "../prompts/.github/instructions/code-standards.md" },
-    { "file": "../prompts/.github/instructions/workflow-and-task-splitting.md" },
+    { "file": "../prompts/.github/instructions/quality-standards.md" },
     { "file": "../prompts/.github/instructions/programming-workflow.md" },
     { "file": "../prompts/.github/instructions/response-and-prompt-guidelines.md" },
     { "file": "../prompts/.github/instructions/testing-guidelines.md" },
-    { "file": "../prompts/.github/instructions/avoid-bad-smells.md" },
+    { "file": "../prompts/.github/instructions/sequential-thinking.md" },
     { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
 ]
 ```

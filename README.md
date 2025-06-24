@@ -28,25 +28,24 @@
 
 ### 任务控制中心
 
-- `[.github/instructions/overview.md](.github/instructions/overview.md)`：打造终极 AI 编码仆从的总蓝图。
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`：打造终极 AI 编码仆从的总蓝图。
 
 ### 脑外科手术部（核心行为）
 
-- `[.github/instructions/core-thinking-principles.md](.github/instructions/core-thinking-principles.md)`：为 AI 注入哲学，教它如何“思考”，而不仅仅是执行。
+- `[.github/instructions/foundational-principles.md](.github/instructions/foundational-principles.md)`：为 AI 注入哲学，教它如何“思考”，而不仅仅是执行。
 - `[.github/instructions/memory-bank.instructions.md](.github/instructions/memory-bank.instructions.md)`：赋予你的 AI 持久“大脑”，对抗数字失忆症。我们知道，这很革命性。
 - `[.github/instructions/response-and-prompt-guidelines.md](.github/instructions/response-and-prompt-guidelines.md)`：强制 AI 专业沟通，拒绝聊天机器人的存在主义危机。包含神圣的 8 段式响应结构。
 - `[.github/instructions/programming-workflow.md](.github/instructions/programming-workflow.md)`：AI 版 TDD 福音，防止牛仔式编码灾难。
-- `[.github/instructions/workflow-and-task-splitting.md](.github/instructions/workflow-and-task-splitting.md)`：教 AI 分解复杂问题而不精神崩溃（MECE 原则万岁）。
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`：教 AI 分解复杂问题而不精神崩溃（MECE 原则万岁）。
 
 ### 质量控制部（拒绝垃圾代码）
 
-- `[.github/instructions/code-standards.md](.github/instructions/code-standards.md)`：整洁代码的神圣戒律（SOLID、DRY 等）。
-- `[.github/instructions/avoid-bad-smells.md](.github/instructions/avoid-bad-smells.md)`：代码异味和反模式的黑名单。你的 AI 将学会像躲避放射性废物一样避开它们。
+- `[.github/instructions/quality-standards.md](.github/instructions/quality-standards.md)`：整洁代码的神圣戒律（SOLID、DRY 等）以及代码异味和反模式的黑名单。你的 AI 将学会像躲避放射性废物一样避开它们。
 - `[.github/instructions/testing-guidelines.md](.github/instructions/testing-guidelines.md)`：如何编写真正能测试东西的测试。覆盖所有情况，免得代码在生产环境爆炸。
 
 ### 流程工程（化想法为现实）
 
-- `[.github/instructions/req.md](.github/instructions/req.md)`：将模糊想法转化为具体计划，一次一个 Markdown 片段。专为希望 AI “懂行”的 BA 和 PM 设计。
+- `[.github/instructions/planning-workflow.md](.github/instructions/planning-workflow.md)`：将模糊想法转化为具体计划，一次一个 Markdown 片段。专为希望 AI “懂行”的 BA 和 PM 设计。
 - `[.github/instructions/ba.md](.github/instructions/ba.md)`：为业务分析师量身定制的 AI 辅助用户故事撰写流程。从史诗到故事，BA 认可的精度。
 
 ### 工具大师学院（高级技巧）
@@ -71,16 +70,15 @@
 ```jsonc
 "github.copilot.chat.codeGeneration.instructions": [
     { "text": "避免生成与公开代码完全一致的代码。" },
-    { "file": "../prompts/.github/instructions/req.md" },
+    { "file": "../prompts/.github/instructions/foundational-principles.md" },
+    { "file": "../prompts/.github/instructions/planning-workflow.md" },
     { "file": "../prompts/.github/instructions/ba.md" },
-    { "file": "../prompts/.github/instructions/overview.md" },
     { "file": "../prompts/.github/instructions/memory-bank.instructions.md" },
-    { "file": "../prompts/.github/instructions/code-standards.md" },
-    { "file": "../prompts/.github/instructions/workflow-and-task-splitting.md" },
+    { "file": "../prompts/.github/instructions/quality-standards.md" },
     { "file": "../prompts/.github/instructions/programming-workflow.md" },
     { "file": "../prompts/.github/instructions/response-and-prompt-guidelines.md" },
     { "file": "../prompts/.github/instructions/testing-guidelines.md" },
-    { "file": "../prompts/.github/instructions/avoid-bad-smells.md" },
+    { "file": "../prompts/.github/instructions/sequential-thinking.md" },
     { "file": "../prompts/.github/instructions/shortcut-system-instruction.md" }
 ]
 ```
