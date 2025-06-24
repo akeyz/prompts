@@ -49,7 +49,7 @@ This document is a mandatory system instruction for The AI Assistant. Proactivel
 
 ## 4. Common Code Smells (To Avoid)
 
-- **Large Components**: Avoid long methods, large classes ("God Objects"), and long parameter lists.
+- **Large Components**: Avoid long methods (keep methods under 20 lines, max 30 for complex but well-structured cases), large classes ("God Objects"), and long parameter lists (limit to 3-4 parameters; encapsulate if more are needed).
 - **Feature Envy**: Methods should be interested in the data of their own class, not primarily in the data of other classes.
 - **Divergent Change / Shotgun Surgery**: A single change should not require modifying multiple, unrelated classes. A class should not change for many different reasons.
 - **Data Clumps**: Group related variables that are often passed around together into a cohesive object.
@@ -76,10 +76,20 @@ This document is a mandatory system instruction for The AI Assistant. Proactivel
 - **Circular Dependencies**: Ensure there are no circular dependencies between modules or files.
 - **Anemic Domain Model**: Ensure business logic is within the domain objects, not just in service layers.
 - **Input Kludge**: Implement clean, robust input handling and validation.
+- **Boat Anchors**: Remove useless code that serves no purpose.
+- **Caching Failure**: Ensure effective, working caching mechanisms.
+- **Loop-Switch Sequences**: Keep logic clear and avoid complex loop-switch combinations.
+- **Programming by Permutation**: Make deliberate, reasoned changes rather than trying random modifications.
 
 ---
 
-## 6. Testing
+## 6. Technology Stack Best Practices
+
+- **Database**: Use proper schema design, migrations, relations, seeding, and client setup. Optimize queries, use transactions, pagination, and aggregations. Design for normalization, indexing, constraints, and security (auth, encryption, backups).
+- **DevOps**: Use modular code, naming conventions, no hardcoded values; automate CI/CD and testing.
+- **Java/Spring Boot**: Follow Spring conventions, use proper annotations, prefer constructor injection, test with JUnit 5, MockMvc, use DTOs, handle exceptions globally, and ensure logging/monitoring.
+
+## 7. Testing
 
 - **Coverage**: Write comprehensive tests covering positive, negative, and edge cases.
 - **Clarity & Independence**: Tests should be clear, independent, and maintainable.

@@ -44,9 +44,11 @@ Manage a single `.md` file with these H2 headings:
   1.  Analyze the approved requirements.
   2.  Decompose them into tasks under the `## Tasks` section, following these principles:
       - **MECE**: Tasks must be Mutually Exclusive and Collectively Exhaustive.
-      - **Sized**: Tasks should be small enough to be completed in a single session.
-      - **Defined**: Each task needs a clear objective and a verifiable deliverable.
-      - **Prioritized**: Order tasks by logical sequence and dependency.
+      - **Clear Objectives & Deliverables**: Each subtask must have a precisely defined objective and an expected, verifiable deliverable.
+      - **Manageable Size**: Break tasks down into chunks that are small enough to be completed within a reasonable timeframe (e.g., a few hours to a day for significant subtasks, or smaller for micro-tasks within a development session).
+      - **Prioritization**: Consider business value (address high-value items earlier), dependencies and logical order (implement foundational tasks before those that depend on them), and risk (tackle high-risk or uncertain tasks earlier to uncover potential issues sooner).
+      - **Independence**: Aim for subtasks that can be worked on and tested independently to allow for parallel work or focused effort.
+      - **Verifiability**: Design subtasks so that their completion can be clearly verified (e.g., through specific tests, demonstrations, or a checklist of criteria).
   3.  Request user review and confirmation.
 
 ### 3. Tasks → Design
