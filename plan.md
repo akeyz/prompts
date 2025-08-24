@@ -16,14 +16,14 @@
 
 ### 4 大组件分工
 
-- **Sub-agents**：复杂的多步骤工作流程和专业角色行为（5个）
-- **Slash Commands**：快速启动的单一任务和工作流触发器（7个）
-- **Output Styles**：特定的交互模式和响应格式（1个）
+- **Sub-agents**：复杂的多步骤工作流程和专业角色行为（5 个）
+- **Slash Commands**：快速启动的单一任务和工作流触发器（7 个）
+- **Output Styles**：特定的交互模式和响应格式（1 个）
 - **CLAUDE.md**：持久化的知识、原则和配置信息（集成所有基础内容）
 
 ## 逐文件详细分解计划
 
-### 1. `foundational-principles.md` 
+### 1. `foundational-principles.md`
 
 **当前内容**：核心思维原则、人机协作模型、指令框架概览
 
@@ -154,11 +154,10 @@ prompts/
 │   │   └── design.md
 │   └── output-styles/              # Output Styles (1个)
 │       └── structured-responder.md
-├── claude-config/                  # 配置工具
-│   ├── templates/
-│   ├── migration-tools/
-│   └── setup.sh
-└── CLAUDE.md                      # 增强版记忆系统
+├── claude-config/
+│   ├── templates/ todo: no need
+│   ├── migration-tools/ todo: no need
+│   └── setup.sh todo: this one is enough
 ```
 
 ## 集成工作流示例
@@ -225,17 +224,17 @@ prompts/
 
 ## 详细映射总结
 
-| 原始文件                | Sub-agent                   | Command         | Output Style           | CLAUDE.md 内容     |
-| ----------------------- | --------------------------- | --------------- | ---------------------- | ------------------ |
-| foundational-principles | -                           | -               | -                      | 思维原则、协作模型 |
-| memory-bank             | -                           | /memory         | -                      | 记忆管理方法       |
-| response-guidelines     | -                           | /improve-prompt | structured-responder   | 沟通协议           |
-| programming-workflow    | tdd-coach-agent             | /tdd            | -                      | TDD 原则清单       |
-| planning-workflow       | planning-specialist-agent   | /plan           | -                      | 规划模板、MECE     |
-| quality-standards       | code-quality-guardian-agent | /review         | -                      | SOLID、代码异味    |
-| testing-guidelines      | test-architect-agent        | -               | -                      | 测试原则标准       |
-| ba.md                   | business-analyst-agent      | /ba             | -                      | BA 工作流模板      |
-| shortcut-system         | -                           | 全转为 commands | -                      | 命令映射表         |
+| 原始文件                | Sub-agent                   | Command         | Output Style         | CLAUDE.md 内容     |
+| ----------------------- | --------------------------- | --------------- | -------------------- | ------------------ |
+| foundational-principles | -                           | -               | -                    | 思维原则、协作模型 |
+| memory-bank             | -                           | /memory         | -                    | 记忆管理方法       |
+| response-guidelines     | -                           | /improve-prompt | structured-responder | 沟通协议           |
+| programming-workflow    | tdd-coach-agent             | /tdd            | -                    | TDD 原则清单       |
+| planning-workflow       | planning-specialist-agent   | /plan           | -                    | 规划模板、MECE     |
+| quality-standards       | code-quality-guardian-agent | /review         | -                    | SOLID、代码异味    |
+| testing-guidelines      | test-architect-agent        | -               | -                    | 测试原则标准       |
+| ba.md                   | business-analyst-agent      | /ba             | -                    | BA 工作流模板      |
+| shortcut-system         | -                           | 全转为 commands | -                    | 命令映射表         |
 
 **跳过的文件**：sequential-thinking.md（按照 todo 反馈跳过）
 
