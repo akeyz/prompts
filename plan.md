@@ -7,7 +7,7 @@
 - **自主编排**: 主 Claude 作为编排者，代理间无需交叉引用
 - **价值导向**: 只保留真正有价值的组件，避免架构过度设计
 
-## 重构架构
+## 目标架构
 
 ### .claude/ 目录结构
 
@@ -20,9 +20,9 @@
 │   └── memory-manager.md      # 记忆 + 知识管理 (专注)
 ├── commands/
 │   └── improve-prompt.md      # 唯一保留的命令
-todo: we still need the response and prompt guidelines and structured responder contents in here as output style
-todo: you did it wrong, i meant we only need one thing in output style, which is the structured responder md file
-└── CLAUDE.md                  # 高层原则，简洁明了 todo: you did this part wrong as well, this claude md file is in the .claude/ 目录下, not in the root of this repo
+├── output-styles/
+│   └── structured-responder.md # 8节响应结构
+└── CLAUDE.md                  # 高层原则，简洁明了
 ```
 
 ## 代理整合策略
@@ -55,25 +55,27 @@ todo: you did it wrong, i meant we only need one thing in output style, which is
 **工具**: Read, Write, Edit
 **触发**: 知识管理、记忆操作任务
 
-## 精简化 CLAUDE.md
+## 文件内容规范
 
-### 核心内容（仅高层原则）
+### CLAUDE.md 精简化
+
+**核心内容**（仅高层原则）:
 
 1. **思维模式**: 系统、辩证、创新、批判思维
 2. **协作模型**: 人类决策，AI 执行
 3. **质量标准**: SOLID + DRY 核心原则
 4. **工作流理念**: TDD + 规划驱动 + 质量优先
 
-### 移除冗余内容
+**移除内容**:
 
 - ❌ 详细的代理能力描述
 - ❌ 具体的命令使用说明
 - ❌ 重复的工作流步骤
 - ❌ 交叉引用和导航
 
-## 文件精简原则
+### 代理文件格式
 
-### 每个文件内容要求
+每个代理文件包含:
 
 - **目的**: 一句话说明角色定位
 - **能力**: 3-5 个核心能力点
@@ -81,20 +83,16 @@ todo: you did it wrong, i meant we only need one thing in output style, which is
 - **工具**: 可用工具列表
 - **原则**: 2-3 个关键原则
 
-### 精简平衡原则
+## 精简平衡原则
 
 - **保持核心完整**: 精炼表达但保留关键思想和方法论
 - **智能压缩**: 用更少的词传达相同的深度和价值
 - **避免过度削减**: 简洁不等于简单，保持必要的复杂性
+- **信任 Claude**: 去除冗长描述，专注核心概念
 
-### 文档风格
+## 实施标准
 
-- 去除冗长描述和示例
-- 专注核心概念和关键信息
-- 避免重复和交叉引用
-- 信任 Claude 的理解能力
-
-## 实施步骤
+### 重构步骤
 
 1. **合并相关代理**: 4 个功能聚焦的智能代理
 2. **精简命令系统**: 只保留 `/improve-prompt`
@@ -102,9 +100,11 @@ todo: you did it wrong, i meant we only need one thing in output style, which is
 4. **优化代理文档**: 简洁、洞察性、要点明确
 5. **移除交叉引用**: 每个文件独立，主 Claude 编排
 
-## 成功标准
+### 成功指标
 
 - **智能编排**: Claude 自主选择合适代理和工具
+- **简洁高效**: 保持功能完整性的同时显著减少配置复杂度
+- **易于维护**: 清晰的结构和最小化的依赖关系
 
 ---
 

@@ -29,6 +29,15 @@ Read, Write, Edit
 - Structured output with consistent documentation
 - Quality integration and standards compliance
 
+## MECE Methodology
+
+### Decomposition Framework
+
+- **Mutually Exclusive**: No overlap between tasks/categories
+- **Collectively Exhaustive**: All requirements covered completely
+- **Clear Boundaries**: Each item has precise scope and objectives
+- **Logical Grouping**: Related items clustered by function/domain
+
 ## Planning Workflow
 
 ### Stage 1: Idea → Requirements

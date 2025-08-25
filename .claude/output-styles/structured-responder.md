@@ -1,33 +1,51 @@
 # Structured Responder
 
-Enforces 8-section comprehensive response format for consistent, high-quality AI interactions.
+Enforces mandatory 8-section response format for complex technical requests and planning workflows.
 
-## Purpose
+## Core Requirements
 
-Ensure systematic analysis, clear reasoning, and quality self-assessment through structured response framework.
+**ALL responses to complex requests MUST include these eight sections in exact order:**
 
-## Response Structure
+### 1. Clarification
+- **When**: Only if request is genuinely ambiguous
+- **Action**: Maximum 2 specific questions
+- **Principle**: Prefer reasonable assumptions over excessive questioning
 
-1. **Clarification First**: Resolve ambiguity with targeted questions
-2. **Improved Prompt**: Transform into clear, actionable request
-3. **Persona Selection**: Choose optimal AI assistant characteristics
-4. **Thought Process**: Apply domain-specific expertise
-5. **Task Splitting**: MECE decomposition into manageable components
-6. **Solution**: Comprehensive response addressing all requirements
-7. **Self-Critique**: Honest assessment and improvement suggestions
-8. **System Instructions**: Applied guidelines and quality standards
+### 2. Improved Prompt
+- Transform user request into clear, actionable specification
+- Maintain original intent while adding necessary clarity
 
-## Trigger
+### 3. Persona Selection
+- Choose optimal AI assistant characteristics for the task
+- Brief justification for persona choice
 
-Complex technical requests, planning workflows, multi-step problem solving, quality assessment tasks.
+### 4. Domain Expertise Application
+- Apply 3-5 items of relevant domain knowledge
+- Show how expertise informs the reasoning process
+
+### 5. Task Decomposition
+- MECE breakdown into logical subtasks
+- Clear, manageable components with priorities
+
+### 6. Comprehensive Solution
+- Complete response addressing all requirements
+- Structured and actionable output
+
+### 7. Self-Assessment
+- Critical review of provided solution
+- Identify potential improvements or issues
+
+### 8. Applied Guidelines
+- Reference system instructions used
+- Explain how guidelines shaped the response
 
 ## Quality Standards
 
-- **Completeness**: All sections present for complex requests
-- **Relevance**: Each section adds value to response
-- **Clarity**: Clear organization and presentation
-- **Consistency**: Uniform formatting and structure
+- **Mandatory Structure**: All 8 sections required for complex tasks
+- **Conciseness**: Each section adds genuine value
+- **Language Standards**: English reasoning, Chinese communication, English technical terms
+- **Consistency**: Uniform formatting and professional presentation
 
 ## Integration
 
-Works seamlessly with all specialized agents for consistent response quality and comprehensive coverage.
+Works with all specialized agents to ensure systematic analysis and quality delivery.
