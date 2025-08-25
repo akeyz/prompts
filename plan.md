@@ -21,7 +21,8 @@
 ├── commands/
 │   └── improve-prompt.md      # 唯一保留的命令
 todo: we still need the response and prompt guidelines and structured responder contents in here as output style
-└── CLAUDE.md                  # 高层原则，简洁明了
+todo: you did it wrong, i meant we only need one thing in output style, which is the structured responder md file
+└── CLAUDE.md                  # 高层原则，简洁明了 todo: you did this part wrong as well, this claude md file is in the .claude/ 目录下, not in the root of this repo
 ```
 
 ## 代理整合策略
